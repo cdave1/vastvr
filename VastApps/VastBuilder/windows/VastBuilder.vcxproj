@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\common\AppController.cpp" />
+    <ClCompile Include="..\..\Common\common\AppMenu.cpp" />
+    <ClCompile Include="..\..\Common\common\AppPrototype.cpp" />
+    <ClCompile Include="..\..\Common\common\Console.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\AlarmSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\AnimationSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\BackgroundRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\BlockMover.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\Cameras.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\CullingSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\DeferredLightSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\GeometryRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\HudRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\InputSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\InstancedRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\LabelRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\MeshRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\SkyboxRenderer.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\TransformSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\UiInputSystem.cpp" />
+    <ClCompile Include="..\..\Common\entitysystems\VertexBufferRenderer.cpp" />
+    <ClCompile Include="..\..\Common\windows\App.cpp" />
+    <ClCompile Include="..\src\Builder.cpp" />
+    <ClCompile Include="..\src\BuilderSerialization.cpp" />
+    <ClCompile Include="..\src\Client.cpp" />
+    <ClCompile Include="..\src\components\Counter.cpp" />
+    <ClCompile Include="..\src\DashboardMenu.cpp" />
+    <ClCompile Include="..\src\HomeSpace.cpp" />
+    <ClCompile Include="..\src\InterfaceUtils.cpp" />
+    <ClCompile Include="..\src\Keyboard.cpp" />
+    <ClCompile Include="..\src\SphereMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\common\AppController.h" />
+    <ClInclude Include="..\..\Common\common\AppMenu.h" />
+    <ClInclude Include="..\..\Common\common\AppPrototype.h" />
+    <ClInclude Include="..\..\Common\common\Console.h" />
+    <ClInclude Include="..\..\Common\entitysystems\AlarmSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\AnimationSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\BackgroundRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\BlockMover.h" />
+    <ClInclude Include="..\..\Common\entitysystems\Cameras.h" />
+    <ClInclude Include="..\..\Common\entitysystems\CullingSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\DeferredLightSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\GeometryRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\HudRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\InputSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\InstancedRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\LabelRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\MeshRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\SkyboxRenderer.h" />
+    <ClInclude Include="..\..\Common\entitysystems\TransformSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\UiInputSystem.h" />
+    <ClInclude Include="..\..\Common\entitysystems\VertexBufferRenderer.h" />
+    <ClInclude Include="..\src\Builder.h" />
+    <ClInclude Include="..\src\BuilderSerialization.h" />
+    <ClInclude Include="..\src\components\Counter.h" />
+    <ClInclude Include="..\src\DashboardMenu.h" />
+    <ClInclude Include="..\src\HomeSpace.h" />
+    <ClInclude Include="..\src\InterfaceUtils.h" />
+    <ClInclude Include="..\src\Keyboard.h" />
+    <ClInclude Include="..\src\SphereMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\src\version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\VastDevKit\build\windows\VastDevKit\VastDevKit.vcxproj">
+      <Project>{9a499955-ea5e-4844-86b1-a387e9f388fa}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9778B90-3371-4543-9267-05F9D28105EA}</ProjectGuid>
+    <RootNamespace>VastBuilder</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\david\Projects\VastDevKit\lib\glew-1.13.0\include;C:\Users\david\Projects\glfw-3.1.2\include;..\..\..\VastDevKit\ovr_sdk_win_0.8.0.0\OculusSDK\LibOVRKernel\Src;..\..\..\VastDevKit\ovr_sdk_win_0.8.0.0\OculusSDK\LibOVR\Include;..\..\..\VastDevKit\src;..\..\..\VastDevKit\include;..\..\..\VastDevKit\lib;..\..\..\VastDevKit\lib\jsoncpp;..\..\..\VastDevKit\lib\libuuid\src;..\..\..\VastDevKit\lib\difont\src;..\..\..\VastDevKit\lib\difont\lib\freetype2\include;..\..\..\VastDevKit\lib\Box2D\Box2D;..\..\..\VastDevKit\lib\zlib-1.2.7;..\src;..\..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>vast\vast.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>vast\vast.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>WIN32;NOMINMAX;_DEBUG;DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4068</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;legacy_stdio_definitions.lib;Rpcrt4.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\david\Projects\SDL2\SDL2-2.0.4\VisualC\SDL\bin\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\david\Projects\SDL2\DLL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

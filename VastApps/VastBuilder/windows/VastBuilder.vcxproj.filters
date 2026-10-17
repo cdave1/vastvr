@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c9f4e2cd-2371-4ba6-90a5-d8e5e8ef1e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{84c54ea0-c093-48f2-b418-c3c4804dacf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\entitysystems">
+      <UniqueIdentifier>{ba77f607-c61e-4346-a387-356b07d257e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\common">
+      <UniqueIdentifier>{689aacd0-a510-428e-a8d1-4a90dba35e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\components">
+      <UniqueIdentifier>{0d2512bd-2cfe-43dc-85bb-49c8430e65eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\common\AppController.cpp">
+      <Filter>common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\common\AppMenu.cpp">
+      <Filter>common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\common\Console.cpp">
+      <Filter>common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\AlarmSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\AnimationSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\BackgroundRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\BlockMover.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\Cameras.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\CullingSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\DeferredLightSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\GeometryRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\HudRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\InputSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\InstancedRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\LabelRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\MeshRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\SkyboxRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\TransformSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\UiInputSystem.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\entitysystems\VertexBufferRenderer.cpp">
+      <Filter>common\entitysystems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Builder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BuilderSerialization.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Client.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DashboardMenu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HomeSpace.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InterfaceUtils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Keyboard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SphereMenu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\components\Counter.cpp">
+      <Filter>src\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\common\AppPrototype.cpp">
+      <Filter>common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\windows\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\common\AppController.h">
+      <Filter>common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\common\AppMenu.h">
+      <Filter>common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\common\Console.h">
+      <Filter>common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\AlarmSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\AnimationSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\BackgroundRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\BlockMover.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\Cameras.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\CullingSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\DeferredLightSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\GeometryRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\HudRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\InputSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\InstancedRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\LabelRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\MeshRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\SkyboxRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\TransformSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\UiInputSystem.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\entitysystems\VertexBufferRenderer.h">
+      <Filter>common\entitysystems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Builder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BuilderSerialization.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DashboardMenu.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HomeSpace.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InterfaceUtils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Keyboard.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SphereMenu.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\components\Counter.h">
+      <Filter>src\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\common\AppPrototype.h">
+      <Filter>common\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\src\version.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

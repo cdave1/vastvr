@@ -1,0 +1,11 @@
+* text=auto
+*.pbxproj text diff merge
+*.ttf binary
+*.otf binary
+*.png binary
+*.jpg binary
+*.wav binary
+*.mp3 binary
+# Preserve the verified upstream model bytes, including original line endings.
+*.obj -text
+*.mtl -text

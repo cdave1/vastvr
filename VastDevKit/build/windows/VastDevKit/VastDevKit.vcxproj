@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A499955-EA5E-4844-86B1-A387E9F388FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>VastDevKit</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;DEBUG;NOMINMAX;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\david\Projects\VastDevKit\lib\libpng.1.621;..\..\..\lib\zlib;C:\Users\david\Projects\glfw-3.1.2\include;C:\Users\david\Projects\VastDevKit\lib\glew-1.13.0\include;C:\Users\david\Projects\VastDevKit\lib\ovr_sdk_win_1.43.0\LibOVRKernel\Src;C:\Users\david\Projects\VastDevKit\lib\ovr_sdk_win_1.43.0\LibOVR\Include;..\..\..\src;..\..\..\include;..\..\..\lib;..\..\..\lib\jsoncpp;..\..\..\lib\libuuid\src;..\..\..\lib\difont\src;..\..\..\lib\difont\lib\freetype2\include;..\..\..\lib\Box2D\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>vast/vast.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>vast\vast.h</ForcedIncludeFiles>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4068</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Users\david\Projects\SDL2-2.0.12\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\vast\vast.h" />
+    <ClInclude Include="..\..\..\include\vast\VastAnimation.h" />
+    <ClInclude Include="..\..\..\include\vast\VastCore.h" />
+    <ClInclude Include="..\..\..\include\vast\VastData.h" />
+    <ClInclude Include="..\..\..\include\vast\VastGibs.h" />
+    <ClInclude Include="..\..\..\include\vast\VastGraphics.h" />
+    <ClInclude Include="..\..\..\include\vast\VastMath.h" />
+    <ClInclude Include="..\..\..\include\vast\VastPhysics.h" />
+    <ClInclude Include="..\..\..\include\vast\VastScripts.h" />
+    <ClInclude Include="..\..\..\include\vast\VastSound.h" />
+    <ClInclude Include="..\..\..\include\vast\VastTest.h" />
+    <ClInclude Include="..\..\..\include\vast\VastUI.h" />
+    <ClInclude Include="..\..\..\lib\jsoncpp\json\json-forwards.h" />
+    <ClInclude Include="..\..\..\lib\jsoncpp\json\json.h" />
+    <ClInclude Include="..\..\..\src\animation\AnimationTimer.h" />
+    <ClInclude Include="..\..\..\src\animation\OpacityBlock.h" />
+    <ClInclude Include="..\..\..\src\animation\PositionBlock.h" />
+    <ClInclude Include="..\..\..\src\animation\ScaleBlock.h" />
+    <ClInclude Include="..\..\..\src\core\application\Alarm.h" />
+    <ClInclude Include="..\..\..\src\core\application\Client.h" />
+    <ClInclude Include="..\..\..\src\core\application\Timer.h" />
+    <ClInclude Include="..\..\..\src\core\collections\Array.h" />
+    <ClInclude Include="..\..\..\src\core\collections\Collections.h" />
+    <ClInclude Include="..\..\..\src\core\collections\CollectionSettings.h" />
+    <ClInclude Include="..\..\..\src\core\collections\LinkedList.h" />
+    <ClInclude Include="..\..\..\src\core\collections\TypedefArray.h" />
+    <ClInclude Include="..\..\..\src\core\collections\Vector.h" />
+    <ClInclude Include="..\..\..\src\core\common\Common.h" />
+    <ClInclude Include="..\..\..\src\core\common\compat\compat.h" />
+    <ClInclude Include="..\..\..\src\core\common\Log.h" />
+    <ClInclude Include="..\..\..\src\core\component\AbstractComponentPool.h" />
+    <ClInclude Include="..\..\..\src\core\component\Component.h" />
+    <ClInclude Include="..\..\..\src\core\component\ComponentPool.h" />
+    <ClInclude Include="..\..\..\src\core\component\Components.h" />
+    <ClInclude Include="..\..\..\src\core\compression\Compression.h" />
+    <ClInclude Include="..\..\..\src\core\device\Device.h" />
+    <ClInclude Include="..\..\..\src\core\encoding\Base64.h" />
+    <ClInclude Include="..\..\..\src\core\entity\Entity.h" />
+    <ClInclude Include="..\..\..\src\core\entity\EntityGroup.h" />
+    <ClInclude Include="..\..\..\src\core\entity\EntityPool.h" />
+    <ClInclude Include="..\..\..\src\core\entity\EntityQuery.h" />
+    <ClInclude Include="..\..\..\src\core\entity\EntitySystem.h" />
+    <ClInclude Include="..\..\..\src\core\filesystem\File.h" />
+    <ClInclude Include="..\..\..\src\core\filesystem\FileSystem.h" />
+    <ClInclude Include="..\..\..\src\core\filesystem\PakFileSystem.h" />
+    <ClInclude Include="..\..\..\src\core\filesystem\windows\FileSystemWindows.h" />
+    <ClInclude Include="..\..\..\src\core\system\System.h" />
+    <ClInclude Include="..\..\..\src\data\Children.h" />
+    <ClInclude Include="..\..\..\src\data\Parent.h" />
+    <ClInclude Include="..\..\..\src\gibs\Alarm.h" />
+    <ClInclude Include="..\..\..\src\gibs\BaseEvent.h" />
+    <ClInclude Include="..\..\..\src\gibs\Constants.h" />
+    <ClInclude Include="..\..\..\src\gibs\device\Gamepad.h" />
+    <ClInclude Include="..\..\..\src\gibs\device\Keyboard.h" />
+    <ClInclude Include="..\..\..\src\gibs\device\MotionController.h" />
+    <ClInclude Include="..\..\..\src\gibs\device\Mouse.h" />
+    <ClInclude Include="..\..\..\src\gibs\EventQueue.h" />
+    <ClInclude Include="..\..\..\src\gibs\EventRenderer.h" />
+    <ClInclude Include="..\..\..\src\gibs\gamepad\Axis.h" />
+    <ClInclude Include="..\..\..\src\gibs\gamepad\ControlActive.h" />
+    <ClInclude Include="..\..\..\src\gibs\gamepad\ControlRelease.h" />
+    <ClInclude Include="..\..\..\src\gibs\gamepad\ControlSelect.h" />
+    <ClInclude Include="..\..\..\src\gibs\gamepad\GamepadCode.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\Headset.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\HMD.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\HMDDetector.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\LookAtResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\oculus\DistortionMesh.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\oculus\DistortionVertex.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\oculus\OculusHMD.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\oculus\OculusMirrorTarget.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\oculus\OculusTextureTarget.h" />
+    <ClInclude Include="..\..\..\src\gibs\headset\RayCollisionResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\keyboard\KeyboardResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\keyboard\KeyRelease.h" />
+    <ClInclude Include="..\..\..\src\gibs\keyboard\KeySelect.h" />
+    <ClInclude Include="..\..\..\src\gibs\MouseInput.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\Drag.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\DragResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\HoverResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\Move.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\MoveResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\PointerCode.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\Position.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\Release.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\ReleaseResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\ResponderState.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\Select.h" />
+    <ClInclude Include="..\..\..\src\gibs\pointer\SelectResponder.h" />
+    <ClInclude Include="..\..\..\src\gibs\Policy.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\CameraRenderer.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\CollisionData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\CollisionVolume.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Curve.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\CurveRenderer.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\DepthRenderTarget.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\GeometryRenderTarget.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Light.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\LightModel.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\LookAtData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Material.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\MeshReference.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\OpacityData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\OrthographicData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\PerspectiveData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\PixelBufferSample.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\PointKernel.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Polygon.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\PolygonRenderer.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Projection.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\RayHitTester.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\RayTracer.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\RenderTarget.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\ScreenData.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Shader.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\TextureTarget.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Transform.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\TransformStack.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\VertexBuffer.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Viewport.h" />
+    <ClInclude Include="..\..\..\src\graphics\components\Visibility.h" />
+    <ClInclude Include="..\..\..\src\graphics\gl\GraphicsInterface.h" />
+    <ClInclude Include="..\..\..\src\graphics\gl\LightRenderer.h" />
+    <ClInclude Include="..\..\..\src\graphics\gl\PixelBufferObject.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\Mesh.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshData.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshInstanceData.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshLoader.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshMaterial.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshPrototype.h" />
+    <ClInclude Include="..\..\..\src\graphics\mesh\MeshVertexBuffer.h" />
+    <ClInclude Include="..\..\..\src\graphics\shader\ShaderLoader.h" />
+    <ClInclude Include="..\..\..\src\graphics\shader\ShaderProgram.h" />
+    <ClInclude Include="..\..\..\src\graphics\texture\PNGLoader.h" />
+    <ClInclude Include="..\..\..\src\graphics\texture\Texture.h" />
+    <ClInclude Include="..\..\..\src\graphics\texture\TextureManager.h" />
+    <ClInclude Include="..\..\..\src\graphics\texture\TGALoader.h" />
+    <ClInclude Include="..\..\..\src\graphics\util\hdNoise.h" />
+    <ClInclude Include="..\..\..\src\math\AABB.h" />
+    <ClInclude Include="..\..\..\src\math\Collision3.h" />
+    <ClInclude Include="..\..\..\src\math\Color4f.h" />
+    <ClInclude Include="..\..\..\src\math\Color4ub.h" />
+    <ClInclude Include="..\..\..\src\math\CompressedVertex.h" />
+    <ClInclude Include="..\..\..\src\math\Constants.h" />
+    <ClInclude Include="..\..\..\src\math\Frustum.h" />
+    <ClInclude Include="..\..\..\src\math\Functions.h" />
+    <ClInclude Include="..\..\..\src\math\Geometry.h" />
+    <ClInclude Include="..\..\..\src\math\Matrix.h" />
+    <ClInclude Include="..\..\..\src\math\Plane.h" />
+    <ClInclude Include="..\..\..\src\math\Quaternion.h" />
+    <ClInclude Include="..\..\..\src\math\Size2.h" />
+    <ClInclude Include="..\..\..\src\math\Size3.h" />
+    <ClInclude Include="..\..\..\src\math\Size3f.h" />
+    <ClInclude Include="..\..\..\src\math\Size4.h" />
+    <ClInclude Include="..\..\..\src\math\Triangle.h" />
+    <ClInclude Include="..\..\..\src\math\Vec2.h" />
+    <ClInclude Include="..\..\..\src\math\Vec3.h" />
+    <ClInclude Include="..\..\..\src\math\Vec4.h" />
+    <ClInclude Include="..\..\..\src\math\Vertex.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\BodyInfo.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\components\Body.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\components\PointerJoint.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\components\RevoluteJoint.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\components\World.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\DistanceJointInfo.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\PointerJointInfo.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\PrismaticJointInfo.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\RevoluteJointInfo.h" />
+    <ClInclude Include="..\..\..\src\physics\2d\WorldInfo.h" />
+    <ClInclude Include="..\..\..\src\sound\MusicPlayer.h" />
+    <ClInclude Include="..\..\..\src\sound\SoundController.h" />
+    <ClInclude Include="..\..\..\src\test\ComponentTest.h" />
+    <ClInclude Include="..\..\..\src\test\MathTest.h" />
+    <ClInclude Include="..\..\..\src\test\RayTest.h" />
+    <ClInclude Include="..\..\..\src\test\Testing.h" />
+    <ClInclude Include="..\..\..\src\test\UITest.h" />
+    <ClInclude Include="..\..\..\src\test\VectorTest.h" />
+    <ClInclude Include="..\..\..\src\ui\BooleanOption.h" />
+    <ClInclude Include="..\..\..\src\ui\Font.h" />
+    <ClInclude Include="..\..\..\src\ui\FontLayout.h" />
+    <ClInclude Include="..\..\..\src\ui\FontMesh.h" />
+    <ClInclude Include="..\..\..\src\ui\FontRenderer.h" />
+    <ClInclude Include="..\..\..\src\ui\fonts\DefaultFont.h" />
+    <ClInclude Include="..\..\..\src\ui\fonts\FontLoader.h" />
+    <ClInclude Include="..\..\..\src\ui\fonts\FontLoaderUtils.h" />
+    <ClInclude Include="..\..\..\src\ui\Identifier.h" />
+    <ClInclude Include="..\..\..\src\ui\Languages.h" />
+    <ClInclude Include="..\..\..\src\ui\SphereLayout.h" />
+    <ClInclude Include="..\..\..\src\ui\Text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\png.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngerror.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngget.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngmem.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngpread.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngread.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngrio.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngrtran.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngrutil.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngset.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngtrans.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngwio.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngwrite.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngwtran.c" />
+    <ClCompile Include="..\..\..\lib\libpng.1.621\pngwutil.c" />
+    <ClCompile Include="..\..\..\src\animation\AnimationTimer.cpp" />
+    <ClCompile Include="..\..\..\src\animation\OpacityBlock.cpp" />
+    <ClCompile Include="..\..\..\src\animation\PositionBlock.cpp" />
+    <ClCompile Include="..\..\..\src\animation\ScaleBlock.cpp" />
+    <ClCompile Include="..\..\..\src\core\application\Alarm.cpp" />
+    <ClCompile Include="..\..\..\src\core\application\Client.cpp" />
+    <ClCompile Include="..\..\..\src\core\application\Timer.cpp" />
+    <ClCompile Include="..\..\..\src\core\common\Log.cpp" />
+    <ClCompile Include="..\..\..\src\core\component\Component.cpp" />
+    <ClCompile Include="..\..\..\src\core\component\Components.cpp" />
+    <ClCompile Include="..\..\..\src\core\compression\Compression.cpp" />
+    <ClCompile Include="..\..\..\src\core\device\windows\Device.Windows.cpp" />
+    <ClCompile Include="..\..\..\src\core\encoding\Base64.cpp" />
+    <ClCompile Include="..\..\..\src\core\entity\Entity.cpp" />
+    <ClCompile Include="..\..\..\src\core\entity\EntityGroup.cpp" />
+    <ClCompile Include="..\..\..\src\core\entity\EntityPool.cpp" />
+    <ClCompile Include="..\..\..\src\core\entity\EntityQuery.cpp" />
+    <ClCompile Include="..\..\..\src\core\entity\EntitySystem.cpp" />
+    <ClCompile Include="..\..\..\src\core\filesystem\PakFileSystem.cpp" />
+    <ClCompile Include="..\..\..\src\core\filesystem\windows\FileSystemWindows.cpp" />
+    <ClCompile Include="..\..\..\src\core\system\windows\System.Windows.cpp" />
+    <ClCompile Include="..\..\..\src\data\Children.cpp" />
+    <ClCompile Include="..\..\..\src\data\Parent.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\Alarm_.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\BaseEvent.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\Constants.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\device\Gamepad.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\device\Keyboard.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\device\MotionController.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\device\Mouse.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\EventQueue.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\EventRenderer.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\ovr_sdk_win_0.8.0.0\OculusSDK\LibOVRKernel\Src;..\..\..\src;..\..\..\include;..\..\..\lib;..\..\..\lib\jsoncpp;..\..\..\lib\libuuid\src;..\..\..\lib\difont\src;..\..\..\lib\difont\lib\freetype2\include;..\..\..\lib\Box2D\Box2D;..\..\..\lib\zlib-1.2.7;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gibs\gamepad\Axis.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\gamepad\ControlActive.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\gamepad\ControlRelease.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\gamepad\ControlSelect.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\gamepad\GamepadCode.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\Headset.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\HMD.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\HMDDetector.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\LookAtResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\oculus\DistortionMesh.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\oculus\OculusHMD.v100.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\oculus\OculusMirrorTarget.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\oculus\OculusTextureTarget.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\headset\RayCollisionResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\keyboard\KeyboardResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\keyboard\KeyRelease.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\keyboard\KeySelect.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\Drag.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\DragResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\HoverResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\Move.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\MoveResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\Position.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\Release.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\ReleaseResponder.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\ResponderState.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\Select.cpp" />
+    <ClCompile Include="..\..\..\src\gibs\pointer\SelectResponder.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\CameraRenderer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\CollisionData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\CollisionVolume.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Curve.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\CurveRenderer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\DepthRenderTarget.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\GeometryRenderTarget.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Light.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\LightModel.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\LookAtData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Material.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\MeshReference.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\OpacityData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\OrthographicData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\PerspectiveData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\PixelBufferSample.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\PointKernel.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Polygon.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\PolygonRenderer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Projection.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\RayHitTester.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\RayTracer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\RenderTarget.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\ScreenData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Shader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\TextureTarget.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Transform.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\TransformStack.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\VertexBuffer.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Viewport.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\components\Visibility.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\gl\GraphicsInterface.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\gl\LightRenderer.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\gl\PixelBufferObject.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh\Mesh.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh\MeshData.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh\MeshLoader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh\MeshMateral.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\mesh\MeshVertexBuffer.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\shader\ShaderLoader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\shader\ShaderProgram.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\texture\PNGLoader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\texture\TextureManager.gl3.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\texture\TGALoader.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\util\hdNoise.cpp" />
+    <ClCompile Include="..\..\..\src\math\Matrix.cpp" />
+    <ClCompile Include="..\..\..\src\physics\2d\components\Body.cpp" />
+    <ClCompile Include="..\..\..\src\physics\2d\components\PointerJoint.cpp" />
+    <ClCompile Include="..\..\..\src\physics\2d\components\RevoluteJoint.cpp" />
+    <ClCompile Include="..\..\..\src\physics\2d\components\World.cpp" />
+    <ClCompile Include="..\..\..\src\sound\MusicPlayer.cpp" />
+    <ClCompile Include="..\..\..\src\sound\windows\SoundController.Windows.cpp" />
+    <ClCompile Include="..\..\..\src\test\ComponentTest.cpp" />
+    <ClCompile Include="..\..\..\src\test\MathTest.cpp" />
+    <ClCompile Include="..\..\..\src\test\RayTest.cpp" />
+    <ClCompile Include="..\..\..\src\test\Testing.cpp" />
+    <ClCompile Include="..\..\..\src\test\UITest.cpp" />
+    <ClCompile Include="..\..\..\src\test\VectorTest.cpp" />
+    <ClCompile Include="..\..\..\src\ui\BooleanOption.cpp" />
+    <ClCompile Include="..\..\..\src\ui\Font.cpp" />
+    <ClCompile Include="..\..\..\src\ui\FontLayout.cpp" />
+    <ClCompile Include="..\..\..\src\ui\FontMesh.cpp" />
+    <ClCompile Include="..\..\..\src\ui\FontRenderer.cpp" />
+    <ClCompile Include="..\..\..\src\ui\fonts\FontLoader.cpp" />
+    <ClCompile Include="..\..\..\src\ui\fonts\FontLoaderUtils.cpp" />
+    <ClCompile Include="..\..\..\src\ui\Identifier.cpp" />
+    <ClCompile Include="..\..\..\src\ui\Languages.cpp" />
+    <ClCompile Include="..\..\..\src\ui\SphereLayout.cpp" />
+    <ClCompile Include="..\..\..\src\ui\Text.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\glfw-3.1.2\projects\src\glfw.vcxproj">
+      <Project>{96781230-e1d1-3417-8fbe-d8f07cb3243b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\Box2D\Box2D\Build\vs2013\Box2D.vcxproj">
+      <Project>{98400d17-43a5-1a40-95be-c53ac78e7694}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\difont\platforms\windows\difont\difont.vcxproj">
+      <Project>{0481a2be-6461-412f-96e5-49bc814eed95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\glew-1.13.0\build\vc10\glew_static.vcxproj">
+      <Project>{664e6f0d-6784-4760-9565-d54f8eb1edf4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\lib\ovr_sdk_win_1.43.0\LibOVR\Projects\Windows\VS2017\LibOVR.vcxproj">
+      <Project>{ea50e705-5113-49e5-b105-2512edc8ddc6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\lib\libpng.1.621\projects\visualc71\Win32_LIB_Release\ZLib\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

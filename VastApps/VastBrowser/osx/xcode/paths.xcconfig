@@ -1,0 +1,16 @@
+// The engine is a sibling directory in the vastvr repository.
+_VAST_ROOT = $(SRCROOT)/../../../../VastDevKit
+#include? "local.xcconfig"
+#include "../../src/version.txt"
+
+BOX_2D_HEADER_PATH = $(_VAST_ROOT)/lib/Box2D/Box2D
+DIFONT_HEADER_PATH = $(_VAST_ROOT)/lib/difont/src
+FREETYPE2_HEADER_PATH = $(_VAST_ROOT)/lib/difont/lib/freetype2/include
+JSONCPP_PATH = $(_VAST_ROOT)/lib/jsoncpp
+DEVELOPER_FILE_SYSTEM_ROOT = \"$(SRCROOT)/../../..\"
+HEADER_SEARCH_PATHS = $(inherited) "$(SRCROOT)/../../src" /opt/homebrew/include /usr/local/include "$(SRCROOT)/../../../Common" "$(SRCROOT)/../../../Common/common" "$(SRCROOT)/../../../Common/entitysystems" "$(SRCROOT)/../../src/apps/MusicPlayer"
+LIBRARY_SEARCH_PATHS = $(inherited) /opt/homebrew/lib /usr/local/lib
+OTHER_LDFLAGS = $(inherited) -lSDL2
+ALWAYS_SEARCH_USER_PATHS = NO
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEVELOPER_FILE_SYSTEM_ROOT=$(DEVELOPER_FILE_SYSTEM_ROOT) MINOR_VERSION=$(MINOR_VERSION) MAJOR_VERSION=$(MAJOR_VERSION) DISTRIBUTION_VERSION=$(DISTRIBUTION_VERSION) _NOMEMORYMANAGER=1 VFP_NO_THUMB

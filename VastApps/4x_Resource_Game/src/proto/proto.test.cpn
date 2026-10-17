@@ -1,0 +1,58 @@
+@0xc518f2e6a61ad972;
+
+struct Entity {
+    id @0 :UInt32;
+    transform @1 :Transform;
+}
+
+struct Transform {
+    origin @0 :Vec3;
+    scale @1 :Vec3;
+    rotation @2 :Quaternion;
+}
+
+struct Vec3 {
+    x @0 :Float32;
+    y @1 :Float32;
+    z @2 :Float32;
+}
+
+struct Quaternion {
+    x @0 :Float32;
+    y @1 :Float32;
+    z @2 :Float32;
+    w @3 :Float32;
+}
+
+struct AABB {
+    upper @0 :Vec3;
+    lower @1: Vec3;
+}
+
+struct Size3 {
+    x @0 :UInt32;
+    y @1 :UInt32;
+    z @2 :UInt32;
+}
+
+struct MeshPrototype {
+    meshMethodKey @0 :Text;
+    cylinderRadius @1 :Float32;
+    cylinderLength @2 :Float32;
+    cylinderSegments @3 :Float32;
+    quadAABB @4 :AABB;
+    cubeAABB @5 :AABB;
+    sphereRadius @6 :Float32;
+    sphereSegments @7 :Float32;
+    simpleCubeSize @8 :Size3;
+    repeatingGridAABB @9 :AABB;
+    repeatingGridCubeSize @10 :Size3;
+    repeatingGridGapSize @11 :Size3;
+    boxWithCurvedCornersSize @12 :Float32;
+    boxWithCurvedCornersCornerRadius @13 :Size3;
+    meshFilePath @14 :Text;
+}
+
+struct EntityList {
+    entities @0 :List(Entity);
+}

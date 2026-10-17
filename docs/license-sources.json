@@ -1,0 +1,80 @@
+{
+  "audit_date": "2026-10-14",
+  "restored_or_added_notices": [
+    {
+      "path": "VastDevKit/lib/Documentation/licenses/COPYING.BSD-3",
+      "source": "https://raw.githubusercontent.com/util-linux/util-linux/v2.25/Documentation/licenses/COPYING.BSD-3",
+      "sha256": "9b718a9460fed5952466421235bc79eb49d4e9eacc920d7a9dd6285ab8fd6c6d",
+      "note": "Verbatim; version tag identifies the license source, not the imported libuuid version."
+    },
+    {
+      "path": "docs/licenses/GPL-3.0.txt",
+      "source": "https://raw.githubusercontent.com/gcc-mirror/gcc/master/COPYING3",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "note": "Verbatim from GCC upstream mirror; accompanies GLEW config.guess."
+    },
+    {
+      "path": "docs/licenses/John-Chapman-MIT.txt",
+      "source": "VastDevKit/src/graphics/mesh/MeshLoader.cpp:1116-1123",
+      "sha256": "b1d1f9393b4dada4799130f9363c364a5ece77ccdca8bbd188df3bc7186a98bc",
+      "note": "Standard MIT text added for the existing John Chapman copyright/MIT declaration; not a byte-for-byte recovery of his original license.txt."
+    },
+    {
+      "path": "docs/licenses/softSurfer.txt",
+      "source": "https://web.archive.org/web/20140701000000id_/http://geomalgorithms.com/a06-_intersect-2.html",
+      "sha256": "2ef3405edb303bd9825b888418e074a9808b8fdb7a2951997f5959e2f54544bc",
+      "note": "Permission notice extracted from the archived original author page for intersect3D_RayTriangle; also restored beside both adaptations."
+    },
+    {
+      "path": "docs/licenses/Stefan-Reinalter-MIT.txt",
+      "source": "https://blog.molecular-matters.com/source-code-license/",
+      "sha256": "4e3e10f59a8d5c415a1ea7c9f09f4505eb67e79f5d3c4c557b6b0bdcd8daa675",
+      "note": "Standard complete MIT notice for the author-confirmed blog snippet license; applies to the quaternion-vector multiplication adaptation."
+    },
+    {
+      "path": "docs/licenses/NVIDIA-SAO-BSD.txt",
+      "source": "https://research.nvidia.com/sites/default/files/pubs/2012-06_Scalable-Ambient-Obscurance/SAO-demo.zip",
+      "sha256": "f8dca06fdf99d4d2b75bf670f63a97fee9bd71eb2ae2e9bef3df2868ebc0c354",
+      "note": "Permission notice extracted verbatim, except whitespace, from SAO_AO.pix in the authors' original NVIDIA-hosted demo archive. Both ambientObscurance fragments also carry the complete notice."
+    },
+    {
+      "path": "docs/licenses/CC0-1.0.txt",
+      "source": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "note": "Unmodified official CC0 1.0 legal text; accompanies the freshly downloaded teapot archive."
+    },
+    {
+      "path": "docs/licenses/Oolong-Math-zlib.txt",
+      "source": "Original VastDevKit import snapshot, lib/Oolong2/Math/Matrix.cpp (base commit 26536ef65872476c1896b137fd7d567b2218089c plus working-tree changes)",
+      "sha256": "07ea8edec0929ce247f3317546c6e821be2ea56239cbbad88498e6c3cb8e07b6",
+      "note": "Verbatim complete notice recovered from the imported Oolong Math/Matrix.cpp. The Matrix::Inverse implementation and comments match that source; the surviving adaptation now carries the notice and is marked as modified. The Oolong bundle remains omitted."
+    }
+  ],
+  "cleanup_date": "2026-10-14",
+  "removed_with_legacy_components": [
+    {
+      "path": "VastDevKit/lib/Oolong2/Examples/Demos/San Angeles/LICENSE-BSD.txt",
+      "source": "https://android.googlesource.com/platform/ndk/+/froyo-release/samples/san-angeles/jni/license-BSD.txt?format=TEXT",
+      "sha256": "ad17d7b0ac1783b22c6e3b8b8676370d59fa29180246e091fd15211bf4cd4e8a",
+      "note": "Base64-decoded Gitiles response; BSD option explicitly offered by the local sample headers.",
+      "removed_on": "2026-10-14",
+      "removal_reason": "Removed with the unused legacy component or its now-unneeded license document."
+    },
+    {
+      "path": "docs/licenses/GPL-2.0.txt",
+      "source": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+      "note": "Verbatim; accompanies the identified GPLv2-or-later legacy sources.",
+      "removed_on": "2026-10-14",
+      "removal_reason": "Removed with the unused legacy component or its now-unneeded license document."
+    },
+    {
+      "path": "VastDevKit/src/sound/ios/PGMidi/LICENSE.upstream.txt",
+      "source": "https://raw.githubusercontent.com/petegoodliffe/PGMidi/72cefa4ac7633b76658dcfb71b1a05a754becbf2/README.md",
+      "sha256": "be3f7f28f00e2ed9a677ae109758e4e12620d9115cba8a36d38be37e9f265cc0",
+      "note": "License section extracted verbatim except surrounding whitespace. Custom application-incorporation permission; source-redistribution scope remains under review.",
+      "removed_on": "2026-10-14",
+      "removal_reason": "Removed with the unused legacy component or its now-unneeded license document."
+    }
+  ]
+}

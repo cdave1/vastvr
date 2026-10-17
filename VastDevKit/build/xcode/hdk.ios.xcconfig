@@ -1,0 +1,17 @@
+#include "hdk.local.xcconfig"
+
+HDK_LIBS_PATH = $(HDK_ROOT)/lib
+
+// 3rd party libraries
+BOX_2D_HEADER_PATH = $(HDK_LIBS_PATH)/Box2D/2.1.2/Box2D
+BOOST_HEADER_PATH = $(HDK_LIBS_PATH)/boost-trunk/
+GLU_HEADER_PATH = $(HDK_LIBS_PATH)/iGLU-1.0.0
+FTGLES_HEADER_PATH = $(HDK_LIBS_PATH)/ftgles/ftgles/src
+JAVASCRIPTCORE_PATH = $(HDK_LIBS_PATH)/JavaScriptCore/
+LUA_PATH = $(HDK_LIBS_PATH)/lua-5.2.1/src
+ZLIB_PATH = $(HDK_LIBS_PATH)/zlib-1.2.7
+
+XCPATH_OLD=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/c++/v1 
+XCPATH=/usr/include/c++/4.2.1/**
+
+HEADER_SEARCH_PATHS = $(HDK_ROOT)/inc $(HDK_ROOT)/src $(BOX_2D_HEADER_PATH) $(BOOST_HEADER_PATH) $(GLU_HEADER_PATH) $(FTGLES_HEADER_PATH) $(JAVASCRIPTCORE_PATH) $(LUA_PATH)

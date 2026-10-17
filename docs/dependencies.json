@@ -1,0 +1,25 @@
+{
+  "fonts": {
+    "Carlito": {
+      "source": "https://github.com/google/fonts",
+      "revision": "66928797f271fed5ee428544e7229685e2d90127",
+      "directory": "ofl/carlito",
+      "license": "OFL-1.1"
+    },
+    "FontAwesome": {
+      "source": "https://github.com/FortAwesome/Font-Awesome",
+      "version": "4.2.0",
+      "license": "OFL-1.1"
+    }
+  },
+  "sha256": {
+    "VastDevKit/lib/carlito/Carlito-Regular.ttf": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+    "VastApps/resources/fonts/Carlito-Regular.ttf": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+    "VastApps/resources/fonts/Carlito-Bold.ttf": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db",
+    "VastApps/resources/fonts/fontawesome.ttf": "4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa"
+  },
+  "vendored_revisions": {
+    "Box2D": "6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+    "difont": "93b77671ca93856f6a98bc40e0d0fbeed03dd39f"
+  }
+}
