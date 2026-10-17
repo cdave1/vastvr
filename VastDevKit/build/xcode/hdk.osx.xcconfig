@@ -1,0 +1,18 @@
+_VAST_ROOT = $(SRCROOT)/../..
+_VAST_LIBS_PATH = $(_VAST_ROOT)/lib
+
+// 3rd party libraries
+BOX_2D_HEADER_PATH = $(_VAST_LIBS_PATH)/Box2D/Box2D
+GLU_HEADER_PATH = $(_VAST_LIBS_PATH)/iGLU-1.0.0
+DIFONT_HEADER_PATH = $(_VAST_LIBS_PATH)/difont/src
+FREETYPE2_HEADER_PATH = $(_VAST_LIBS_PATH)/difont/lib/freetype2/include
+JAVASCRIPTCORE_PATH = $(_VAST_LIBS_PATH)/JavaScriptCore/
+DUKTAPE_PATH = $(_VAST_LIBS_PATH)/duktape-1.0.2/src
+LUA_PATH = $(_VAST_LIBS_PATH)/lua-5.2.1/src
+ZLIB_PATH = $(_VAST_LIBS_PATH)/zlib-1.2.7
+JSONCPP_PATH = $(_VAST_LIBS_PATH)/jsoncpp
+OCULUS_SDK_INCLUDE_PATH = $(_VAST_LIBS_PATH)/OculusSDK.0.4.4/LibOVR/Include
+OCULUS_SDK_SRC_PATH = $(_VAST_LIBS_PATH)/OculusSDK.0.4.4/LibOVR/Src
+
+// Homebrew dependencies on Apple Silicon and Intel Macs.
+HEADER_SEARCH_PATHS = $(inherited) /opt/homebrew/include /usr/local/include "$(_VAST_ROOT)/include" "$(_VAST_ROOT)/src" "$(BOX_2D_HEADER_PATH)" "$(GLU_HEADER_PATH)" "$(DIFONT_HEADER_PATH)" "$(FREETYPE2_HEADER_PATH)" "$(DUKTAPE_PATH)" "$(LUA_PATH)" "$(OCULUS_SDK_INCLUDE_PATH)" "$(OCULUS_SDK_SRC_PATH)" "$(JSONCPP_PATH)"

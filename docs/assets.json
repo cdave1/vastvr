@@ -1,0 +1,3425 @@
+{
+  "review_date": "2026-10-14",
+  "scope": "Retained raster/vector images, fonts, audio, models/materials, and shader files in VastDevKit and VastApps. Includes derived model JSON when present. License documents and other source files are covered by the separate dependency/snippet reviews.",
+  "status_counts": {
+    "upstream-notice": 1,
+    "upstream-package": 54,
+    "upstream-verified": 9,
+    "original-replacement": 58,
+    "project-source": 84,
+    "owner-confirmed": 53,
+    "licensed-adaptation": 2
+  },
+  "assets": [
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Build/Data/DroidSans.ttf",
+      "bytes": 190044,
+      "sha256": "4e2371bc0e4cf6983342e150412f140da79d674c9be0b56458401f581072ecd3",
+      "status": "upstream-notice",
+      "license": "Apache-2.0",
+      "source": "Imported Box2D testbed font; license also declared in the font metadata",
+      "notice": "VastDevKit/lib/Box2D/Box2D/Build/Data/DroidSans-LICENSE.txt"
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/Chain1.png",
+      "bytes": 22342,
+      "sha256": "6cba673a962db04ddeb28ef5da1f61a1b623766d8aa095d5f66c22ade5964c28",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/Chain1.svg",
+      "bytes": 10448,
+      "sha256": "0f0fb0f2a23d3d4e3f9baff0b285b11a18b7b294716c4c16a91ee6c7ac6ee460",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/DebugDraw.png",
+      "bytes": 48950,
+      "sha256": "d56343cb1697a0bb4a1344df8225fbb6229ea8fed8e03e15c5a3a58a31890573",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/GhostCollision.png",
+      "bytes": 12674,
+      "sha256": "6c8f303c718a13eb59a022e63d16c446c6019d9349c313ee991f2c7a63853388",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/GhostCollision.svg",
+      "bytes": 11288,
+      "sha256": "b6332c43596d960dc800872cb4951a7037ac3038c22bfd91a48db9005f6d5509",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/GhostVertices.png",
+      "bytes": 12272,
+      "sha256": "7c0036d6bf4c97338c0c068aef84b35862d83e133e5704055775583c2e7acd7d",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/GhostVertices.svg",
+      "bytes": 11319,
+      "sha256": "11d54fdb98758592a8eb8299ac77b9fe43117b8852e2f861b68e08d35d2d74e7",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SelfIntersect.png",
+      "bytes": 25919,
+      "sha256": "07891c2fd2e79e034a10aac2796cde0ad88ff9e1cab7068f815867bebbc9c7b5",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SelfIntersect.svg",
+      "bytes": 8314,
+      "sha256": "f64b84704827607879574f00be14c6f46c7bf07982e83ee5faa9d5162fbf06c6",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SkinCollision.png",
+      "bytes": 13779,
+      "sha256": "e6c7ed0ab2e423f8be26d3e20ab8d305fb770aba531dfcc6874c82cbc114c3b2",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SkinCollision.svg",
+      "bytes": 6227,
+      "sha256": "b39d92cb05c6758dc1a3e80dbb8e870648edd11254b6377a4363ef449fb69e67",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SkinnedPolygon.png",
+      "bytes": 19311,
+      "sha256": "8c202664b695e394dc14888eefc120ddb0243d1848a42e746fc9f1e87f450f01",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/SkinnedPolygon.svg",
+      "bytes": 8147,
+      "sha256": "53c1dab7dd6d35f011495c50477375b6aaf2ed8a24cfed3992800580eb087e0d",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/Tunnel1.png",
+      "bytes": 21021,
+      "sha256": "950055e45145e91d976e699e808a598e0848632207e4f14ace3741946aac2519",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/Tunnel1.svg",
+      "bytes": 8154,
+      "sha256": "7459868e28d8fc78fcc0467f4d1af33ea2bf085105048de976c11a9235567804",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/WheelJoint.png",
+      "bytes": 8596,
+      "sha256": "ed5f54b168f952f115c142604c24cd2d8b3879851765d08712d2eafdd1dc55cd",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/WheelJoint.svg",
+      "bytes": 8064,
+      "sha256": "a85250b21d319a001c5109250cf3adb44dd6b8e4786aa8a9d97ae1d8ebca1a48",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/bodyOrigin.gif",
+      "bytes": 912,
+      "sha256": "c06a3de8104d5dbc79346a855c1f59aa1ee8e668bdbffdb28bb2658470bbd114",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/captured.png",
+      "bytes": 8536,
+      "sha256": "0f09c02e66dfffb418bf6581083ff6c02f4b9932f8badba883e2f44579c825a0",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/captured.svg",
+      "bytes": 4765,
+      "sha256": "bffdd32cc276a1b431f3da02a183f3149b25296d41929b8b13468265915caaad",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/convex_concave.gif",
+      "bytes": 2303,
+      "sha256": "035b878d1a904e1d2795e4d08a1d71992bcac99638dc31fd29a3d29a0862fa96",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/distance.png",
+      "bytes": 5735,
+      "sha256": "37bd328e1c16bd2ec4010628eb669fd33cdb05c66d333e3d9d2e35b4800e605e",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/distance.svg",
+      "bytes": 6534,
+      "sha256": "b9e5dc7d4ef836f9a41a9828e098f5a6a33445635b80e01d2ba1c2d65af3aa9a",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/distanceJoint.gif",
+      "bytes": 2358,
+      "sha256": "f9e16c00fa5fe3919608ee5bec128c16fa52182c90ae73064be60c798f1e9181",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/gearJoint.gif",
+      "bytes": 2119,
+      "sha256": "50db2bfeaa6cd9f58fb03d7a594a14735b8ee20403ffbbaec5083f2e7c774115",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/manifolds.png",
+      "bytes": 22609,
+      "sha256": "b8b98bca9c1443310306d94983f681ef0ee500dde72325cb1a3839ce0168af40",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/manifolds.svg",
+      "bytes": 9956,
+      "sha256": "4dfcdd74df1e347be4675362559c1defeba8f66d46adafb8258ca39e5ba119aa",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/missed.png",
+      "bytes": 7742,
+      "sha256": "6cbfae4b7b7adcf172c344a1246fdd150fd9a1e56d986318ed1c52efc7ccbd76",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/missed.svg",
+      "bytes": 5992,
+      "sha256": "aa1a824d778f28a925246a0ba9163f2736cc7dfc6019a80bd5869f6fd76da5ff",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/modules.png",
+      "bytes": 6447,
+      "sha256": "742be90521ad9aaafebead8e23b80a63cf26967aef543a74fc2865c3c314aa9f",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/modules.svg",
+      "bytes": 8473,
+      "sha256": "adfaeae65388817be6e2868c74ad1f9010a226ec97a34b2b91f48059eda506a6",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/prismaticJoint.gif",
+      "bytes": 2298,
+      "sha256": "48d1102394aa57db908bac96c9e54355b6709bc1f48f7ad3d62d95b599d37f11",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/pulleyJoint.gif",
+      "bytes": 3526,
+      "sha256": "815e629fd081659bbc6fcdc446c8115e90ffbb0a0a46d06f711addc804cc610e",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/raycast.png",
+      "bytes": 4443,
+      "sha256": "ea9b542f9b4910320bba25d7320261f3912026543f017ebba30acc28dfdfe9f7",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/raycast.svg",
+      "bytes": 5718,
+      "sha256": "c60b0776d9a7fdd46817f00c0e60b1a857400cb2e7100a231267f2eed7fee3c0",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/regionquery.png",
+      "bytes": 3237,
+      "sha256": "2e79150e1f3a1ab300d479e41e82359ffff89d2359b1d345ee2f2863e23a8d64",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/regionquery.svg",
+      "bytes": 5350,
+      "sha256": "dfa112612f27af09174abea38063017eb293eee2122c1fa92fae29f07065f52a",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/revoluteJoint.gif",
+      "bytes": 1920,
+      "sha256": "7beb017063a7fe8adb92894674e34b3ba20967b2dd89657baec6bba524c83ea4",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/testbed.gif",
+      "bytes": 17206,
+      "sha256": "88d32900af7367dec9ee387963254b7e10e9417be098a55141a368d2f0236ace",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/tunneling.png",
+      "bytes": 2629,
+      "sha256": "1a9ab271654ad1ab600b76144faa2fd3bad2549f2dd1ab4ed53a4b5519c2ece7",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/tunneling.svg",
+      "bytes": 5710,
+      "sha256": "65ea6e5294787ecdac06c26301bc3a37b04511de5a544417274364e09cdc01d6",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/winding.png",
+      "bytes": 8463,
+      "sha256": "6041121c0f6be267f6dcc9246a3ae5fcaaed2dbe5770ba10a0848e7c2b48d6e8",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Box2D/Documentation/images/winding.svg",
+      "bytes": 9629,
+      "sha256": "6bc21e476812ab4af801c342c69ed1cf7c053f3ff13272c513ef2673fd4c89da",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/Box2D/Contributions/Platforms/iPhone/Resources/Icon.png",
+      "bytes": 1951,
+      "sha256": "9896d2e2525682cc45aceb45b38394b52f3f99cc0f3e0ef9d6f47ced440d7056",
+      "status": "upstream-package",
+      "license": "Zlib",
+      "source": "Box2D source snapshot 6a69ddbbd59b21c0d6699c43143b4114f7f92e21",
+      "notice": "VastDevKit/lib/Box2D/Box2D/License.txt",
+      "note": "Retained upstream documentation illustrations. Package license retained; no separate asset-specific terms found."
+    },
+    {
+      "path": "VastDevKit/lib/carlito/Carlito-Regular.ttf",
+      "bytes": 628032,
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/66928797f271fed5ee428544e7229685e2d90127/ofl/carlito",
+      "notice": "VastDevKit/lib/carlito/OFL.txt"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/HelloWorld/windows/HelloWorld/HelloWorld.ico",
+      "bytes": 960,
+      "sha256": "01da82cf85b7207be70e17e2006b0d79c5964b515171567a3a2d9cf2f14d7c1a",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/HelloWorld/windows/HelloWorld/small.ico",
+      "bytes": 960,
+      "sha256": "01da82cf85b7207be70e17e2006b0d79c5964b515171567a3a2d9cf2f14d7c1a",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/common/Fonts/Carlito-Bold.ttf",
+      "bytes": 682468,
+      "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/66928797f271fed5ee428544e7229685e2d90127/ofl/carlito",
+      "notice": "VastDevKit/lib/carlito/OFL.txt"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/common/Fonts/Carlito-Regular.ttf",
+      "bytes": 628032,
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/66928797f271fed5ee428544e7229685e2d90127/ofl/carlito",
+      "notice": "VastDevKit/lib/carlito/OFL.txt"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/common/Shaders/quad.frag",
+      "bytes": 117,
+      "sha256": "ad0c835aaffd699a9ceb2f134bf15f4cbe6c6841fd63bbf6e0cff5395a75e290",
+      "status": "upstream-package",
+      "license": "MIT",
+      "source": "difont source snapshot 93b77671ca93856f6a98bc40e0d0fbeed03dd39f",
+      "notice": "VastDevKit/lib/difont/LICENSE",
+      "note": "Owner-authored MIT package sample resources; retained package terms."
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/common/Shaders/quad.vert",
+      "bytes": 293,
+      "sha256": "af61b72a1c71db5a99e94ee43d9fbc07013de14b6fca0520110ec5231026632e",
+      "status": "upstream-package",
+      "license": "MIT",
+      "source": "difont source snapshot 93b77671ca93856f6a98bc40e0d0fbeed03dd39f",
+      "notice": "VastDevKit/lib/difont/LICENSE",
+      "note": "Owner-authored MIT package sample resources; retained package terms."
+    },
+    {
+      "path": "VastDevKit/lib/glew-1.13.0/doc/github.png",
+      "bytes": 1219,
+      "sha256": "ef0c079c56fcab7fe66b9c38a90f107c1bb686f00e306fdef3abe7bdcd2a28e8",
+      "status": "upstream-package",
+      "license": "BSD-style package terms",
+      "source": "Imported GLEW 1.13.0 documentation",
+      "notice": "VastDevKit/lib/glew-1.13.0/LICENSE.txt",
+      "note": "Upstream documentation branding; no separate asset-specific terms found. Third-party marks identify their respective upstream projects; no ownership claim is made."
+    },
+    {
+      "path": "VastDevKit/lib/glew-1.13.0/doc/glew.png",
+      "bytes": 9298,
+      "sha256": "7ce31f1484e2666882d2a2c113b5babe2a81f67ee24719e54ddff659c5746b49",
+      "status": "upstream-package",
+      "license": "BSD-style package terms",
+      "source": "Imported GLEW 1.13.0 documentation",
+      "notice": "VastDevKit/lib/glew-1.13.0/LICENSE.txt",
+      "note": "Upstream documentation branding; no separate asset-specific terms found. Third-party marks identify their respective upstream projects; no ownership claim is made."
+    },
+    {
+      "path": "VastDevKit/lib/glew-1.13.0/doc/new.png",
+      "bytes": 1180,
+      "sha256": "88ed00cab11d4b2ce84342a4f5905e32aea9736e35d2818ddd8bde5803f47f96",
+      "status": "upstream-package",
+      "license": "BSD-style package terms",
+      "source": "Imported GLEW 1.13.0 documentation",
+      "notice": "VastDevKit/lib/glew-1.13.0/LICENSE.txt",
+      "note": "Upstream documentation branding; no separate asset-specific terms found. Third-party marks identify their respective upstream projects; no ownership claim is made."
+    },
+    {
+      "path": "VastDevKit/lib/glew-1.13.0/doc/ogl_sm.jpg",
+      "bytes": 1617,
+      "sha256": "95ecac9399e73e5402eb5f9f85b01742a0b4b5732a9e4885a2af33bc76028051",
+      "status": "upstream-package",
+      "license": "BSD-style package terms",
+      "source": "Imported GLEW 1.13.0 documentation",
+      "notice": "VastDevKit/lib/glew-1.13.0/LICENSE.txt",
+      "note": "Upstream documentation branding; no separate asset-specific terms found. Third-party marks identify their respective upstream projects; no ownership claim is made."
+    },
+    {
+      "path": "VastDevKit/lib/libpng/pngbar.jpg",
+      "bytes": 2498,
+      "sha256": "dac6b8aecef465935b9445b8f134ae0d66069f01d0b05fcdb42f6fdf45972f7b",
+      "status": "upstream-package",
+      "license": "Libpng",
+      "source": "Imported libpng 1.2.44 distribution",
+      "notice": "VastDevKit/lib/libpng/LICENSE",
+      "note": "Upstream test/documentation images; no separate asset-specific terms found. Package license retained."
+    },
+    {
+      "path": "VastDevKit/lib/libpng/pngbar.png",
+      "bytes": 2399,
+      "sha256": "a0d210e0261eb720677c61b59245b653eb3182cc0e089282971443397527f89a",
+      "status": "upstream-package",
+      "license": "Libpng",
+      "source": "Imported libpng 1.2.44 distribution",
+      "notice": "VastDevKit/lib/libpng/LICENSE",
+      "note": "Upstream test/documentation images; no separate asset-specific terms found. Package license retained."
+    },
+    {
+      "path": "VastDevKit/lib/libpng/pngnow.png",
+      "bytes": 2069,
+      "sha256": "3198a5d8f197d6b45a7124390c245a886be0be9b8e7891cfc7525ad65fbeb0a9",
+      "status": "upstream-package",
+      "license": "Libpng",
+      "source": "Imported libpng 1.2.44 distribution",
+      "notice": "VastDevKit/lib/libpng/LICENSE",
+      "note": "Upstream test/documentation images; no separate asset-specific terms found. Package license retained."
+    },
+    {
+      "path": "VastDevKit/lib/libpng/pngtest.png",
+      "bytes": 8574,
+      "sha256": "ba59c25ba0ad3397bb2a6428bf202a0e225c375905783e4f82c0bc16f0fbc8d0",
+      "status": "upstream-package",
+      "license": "Libpng",
+      "source": "Imported libpng 1.2.44 distribution",
+      "notice": "VastDevKit/lib/libpng/LICENSE",
+      "note": "Upstream test/documentation images; no separate asset-specific terms found. Package license retained."
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/arrow.png",
+      "bytes": 227,
+      "sha256": "dbe9fd6343fc0a0d9ebd4afe854fbe047d84a3d59f748e8a78813bb8bd383549",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/boxIcon.png",
+      "bytes": 303,
+      "sha256": "f14b16d10accbff6c271a2e575195465f08a9ad81e21caed560940789b42737f",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconCylinder.png",
+      "bytes": 284,
+      "sha256": "60d232eb547bd8962c86d95de10705bb700058f75cedca19792894c02d5e51bf",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconHexagon.png",
+      "bytes": 263,
+      "sha256": "656dd678942aba3b38dbbedbf7587d66e99ad6451c0f9001b2453b8bd23307fe",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconJointDistance.png",
+      "bytes": 239,
+      "sha256": "1ec3fe4bcb3fc037d6d1b92246de07db3cbe5526b52a46b777f697ddd2617a5e",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconJointRevolute.png",
+      "bytes": 239,
+      "sha256": "1ec3fe4bcb3fc037d6d1b92246de07db3cbe5526b52a46b777f697ddd2617a5e",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconMultistar.png",
+      "bytes": 301,
+      "sha256": "96fceb98ba464d86ba6c60cfa370f1b4cab7a06394a4f7a06558d4f895c5e3d8",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconPrismaticJoint.png",
+      "bytes": 239,
+      "sha256": "1ec3fe4bcb3fc037d6d1b92246de07db3cbe5526b52a46b777f697ddd2617a5e",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconSpikes.png",
+      "bytes": 301,
+      "sha256": "96fceb98ba464d86ba6c60cfa370f1b4cab7a06394a4f7a06558d4f895c5e3d8",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconStar.png",
+      "bytes": 301,
+      "sha256": "96fceb98ba464d86ba6c60cfa370f1b4cab7a06394a4f7a06558d4f895c5e3d8",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangle.png",
+      "bytes": 279,
+      "sha256": "ead59ce9a96d6d3c67d70c4942812559dfce75c4d0efa56ff1bc93bdbc208a62",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangleFan.png",
+      "bytes": 279,
+      "sha256": "ead59ce9a96d6d3c67d70c4942812559dfce75c4d0efa56ff1bc93bdbc208a62",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangleStrip.png",
+      "bytes": 279,
+      "sha256": "ead59ce9a96d6d3c67d70c4942812559dfce75c4d0efa56ff1bc93bdbc208a62",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/jointIcon.png",
+      "bytes": 251,
+      "sha256": "06acb6d0e76feced5b1b13cdff4071c7e401f4cdcf8270fae7121c1d0343e646",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/arrow.png",
+      "bytes": 227,
+      "sha256": "dbe9fd6343fc0a0d9ebd4afe854fbe047d84a3d59f748e8a78813bb8bd383549",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/boxIcon.png",
+      "bytes": 303,
+      "sha256": "f14b16d10accbff6c271a2e575195465f08a9ad81e21caed560940789b42737f",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/newImage.png",
+      "bytes": 264,
+      "sha256": "0dccc99c538db128dc6fd9db828858f7aee22432adf6dc1c29ec0fba452c9d41",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/ic_launcher-web.png",
+      "bytes": 3234,
+      "sha256": "ade4df15ebd523432c4835a8ac743ffd0fe12b7df949bf785a11070ee6d1ec58",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-hdpi/ic_launcher.png",
+      "bytes": 432,
+      "sha256": "4ed0c90139615ec57165b9e63c6ae002bf4f7d241c3e6e74bec5f84c298119a0",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-mdpi/ic_launcher.png",
+      "bytes": 353,
+      "sha256": "13347a120b5425163fea27a4e80b55e5c43964e73d1ce658e02c3ea7c30d99ff",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-xhdpi/ic_launcher.png",
+      "bytes": 514,
+      "sha256": "6e7d0c2244e3ac5a1de873582de9ea64334e3e513db7d5064099cd0c2e99cd9e",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-xxhdpi/ic_launcher.png",
+      "bytes": 669,
+      "sha256": "d66da38a255cd3f93c4fcfb6b14dbc38673497c9465661b977a08b7dc254a9db",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/RenderTarget.fsh",
+      "bytes": 197,
+      "sha256": "2688d653bdae9bd98e6268bede4fa31062d7db3076db4c7a94e57da6f0372297",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/RenderTarget.vsh",
+      "bytes": 325,
+      "sha256": "e7794b97c84fecbd2a2d862a87c62d99184513f29229416bd9c9626d80b011f8",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/Shader.fsh",
+      "bytes": 293,
+      "sha256": "93984443f17e53bd9a001b4a9469a39aecfb9e6bb3cb1ff3a14540869a090e41",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/Shader.vsh",
+      "bytes": 315,
+      "sha256": "d49202f8a716264ca53b3844e67b3a6885afec827063fb58357d9544c1eb5a89",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/blockSelect03.caf",
+      "bytes": 8614,
+      "sha256": "3c9c25ee759e8d916126e19a1c9e963469ad154589eb014b681c39870f206fba",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/PhysicsHotel/resources/SOUND_EFFECTS_LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/color.fsh",
+      "bytes": 137,
+      "sha256": "29a37a6f90239a4e52bf48f8bd978eaf8453bea42210abc9759b3ff87dfe866c",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/color.vsh",
+      "bytes": 469,
+      "sha256": "9ef56d86178de3d5030c42edd207bd154f95f2a54993408c12703d9f32a9523d",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/galaxy.fsh",
+      "bytes": 1163,
+      "sha256": "7ccee8490ad74582c6a2a6d6761e29ff19796d7fa7e535fa3a6d3086808bb666",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/noise.png",
+      "bytes": 99770,
+      "sha256": "8ffbd7873d83d3c5f6a3d90c71c2ce134f05191c888ee14009930c056066451c",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/outline.fsh",
+      "bytes": 215,
+      "sha256": "05a9a29efce10dd8adf7cd24ca7620e906be0f4ab429ff4880a055bffbbf9524",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/tex0.fsh",
+      "bytes": 197,
+      "sha256": "2688d653bdae9bd98e6268bede4fa31062d7db3076db4c7a94e57da6f0372297",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/wood.png",
+      "bytes": 4852,
+      "sha256": "573b2a91a1392d353bb702d46f419a6d61dac9802281b660d616537cc8fc9217",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/ic_launcher-web.png",
+      "bytes": 3234,
+      "sha256": "ade4df15ebd523432c4835a8ac743ffd0fe12b7df949bf785a11070ee6d1ec58",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-hdpi/ic_launcher.png",
+      "bytes": 432,
+      "sha256": "4ed0c90139615ec57165b9e63c6ae002bf4f7d241c3e6e74bec5f84c298119a0",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-mdpi/ic_launcher.png",
+      "bytes": 353,
+      "sha256": "13347a120b5425163fea27a4e80b55e5c43964e73d1ce658e02c3ea7c30d99ff",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-xhdpi/ic_launcher.png",
+      "bytes": 514,
+      "sha256": "6e7d0c2244e3ac5a1de873582de9ea64334e3e513db7d5064099cd0c2e99cd9e",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-xxhdpi/ic_launcher.png",
+      "bytes": 669,
+      "sha256": "d66da38a255cd3f93c4fcfb6b14dbc38673497c9465661b977a08b7dc254a9db",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/fonts/Carlito-Bold.ttf",
+      "bytes": 682468,
+      "sha256": "bb5d20f79b82599ec72983597437373a80f2d2085fa91fc144fd74e876a594db",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/66928797f271fed5ee428544e7229685e2d90127/ofl/carlito",
+      "notice": "VastDevKit/lib/carlito/OFL.txt"
+    },
+    {
+      "path": "VastApps/resources/fonts/Carlito-Regular.ttf",
+      "bytes": 628032,
+      "sha256": "f6418f708baede9789daef5d458c0f53d2a888af9820e8062934e504fedc6595",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/google/fonts/tree/66928797f271fed5ee428544e7229685e2d90127/ofl/carlito",
+      "notice": "VastDevKit/lib/carlito/OFL.txt"
+    },
+    {
+      "path": "VastApps/resources/fonts/fontawesome.ttf",
+      "bytes": 112160,
+      "sha256": "4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa",
+      "status": "upstream-verified",
+      "license": "OFL-1.1",
+      "source": "https://github.com/FortAwesome/Font-Awesome/tree/v4.2.0",
+      "notice": "VastApps/resources/fonts/FontAwesome-OFL.txt"
+    },
+    {
+      "path": "VastApps/resources/images/eraser.png",
+      "bytes": 987,
+      "sha256": "173afae2fe90ab0fbedabb09d75c4c7bcf5f6a47bf3b85ec35b97fcf39893da1",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/fa-check-off.png",
+      "bytes": 939,
+      "sha256": "cf4184635b95d345d93a6350d3b4fd4000fc1a5470d90f1d8943cbb09d73a947",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/fa-check.png",
+      "bytes": 1277,
+      "sha256": "d868549b0b47c0671207aa1a0691196ce3ffae0d350a20e3c75bc5ce1f5c63a1",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/gradient1.png",
+      "bytes": 1212,
+      "sha256": "f46a816039b5f582c7ac6d0b6ee99fd23236a316d813ce5b98a8a0c6cd969d4b",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/gradient2.png",
+      "bytes": 1212,
+      "sha256": "f46a816039b5f582c7ac6d0b6ee99fd23236a316d813ce5b98a8a0c6cd969d4b",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/gradient3.png",
+      "bytes": 1212,
+      "sha256": "f46a816039b5f582c7ac6d0b6ee99fd23236a316d813ce5b98a8a0c6cd969d4b",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/gradient4.png",
+      "bytes": 1212,
+      "sha256": "f46a816039b5f582c7ac6d0b6ee99fd23236a316d813ce5b98a8a0c6cd969d4b",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/gradient5.png",
+      "bytes": 1212,
+      "sha256": "f46a816039b5f582c7ac6d0b6ee99fd23236a316d813ce5b98a8a0c6cd969d4b",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/grey-Gradient.png",
+      "bytes": 1514,
+      "sha256": "0c52e26bbb74728d22e793e083ab3d7570725fd898252688afac4dfed8e04b53",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/maps.png",
+      "bytes": 1555,
+      "sha256": "3534a243bf9f7f7e599c717151f45dd9ddbf1eaee1ea961b8a047145cd5ca1fe",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/music_player.png",
+      "bytes": 1050,
+      "sha256": "4868cd2157dee79df2f9e8b234d8dbf4c12f0ca8ebb01ec915ab628b0ab739a5",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/paint.png",
+      "bytes": 934,
+      "sha256": "5fcc81d0bb45181991d7562c6e1c219d8b80ef39ebeb92fa1bde786e7e94e1e6",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/pencil.png",
+      "bytes": 933,
+      "sha256": "7ae95131e4b29a96aa81b77645b8298336dab491ff0c06eea7234492dfdb6119",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/reticule.png",
+      "bytes": 1124,
+      "sha256": "5616fd0d719f0cca41e9677a31b5ed8166759016f3e82350b25d017e314f1eab",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/skybox_viewer.png",
+      "bytes": 1555,
+      "sha256": "3534a243bf9f7f7e599c717151f45dd9ddbf1eaee1ea961b8a047145cd5ca1fe",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/target.png",
+      "bytes": 1124,
+      "sha256": "5616fd0d719f0cca41e9677a31b5ed8166759016f3e82350b25d017e314f1eab",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/vast.png",
+      "bytes": 1229,
+      "sha256": "2193cd9719c02827c4907605c4b9c39cd3c06dcd3a00fac9da6d0b709cfba19d",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/wood.png",
+      "bytes": 4852,
+      "sha256": "573b2a91a1392d353bb702d46f419a6d61dac9802281b660d616537cc8fc9217",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/images/youtube.png",
+      "bytes": 912,
+      "sha256": "844a925895342558cd8efa5fdb9c8cbb5b8e5b47e947d29bee2dc9517aec03a7",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/models/teapot/default.mtl",
+      "bytes": 304,
+      "sha256": "3dcd7a58c7ef04d7b9690f5aa96763941bb62e9f044b41da755b05f512aafc76",
+      "status": "upstream-verified",
+      "license": "CC0-1.0",
+      "source": "https://casual-effects.com/g3d/data10/common/model/teapot/teapot.zip",
+      "metadata": "https://casual-effects.com/g3d/data10/common/model/teapot/info.js",
+      "notice": "docs/licenses/CC0-1.0.txt",
+      "note": "Unmodified file, matched against freshly downloaded archive. Martin Newell; archive version 2011-07-27, modified by Kenzie Lamar as described by archive metadata."
+    },
+    {
+      "path": "VastApps/resources/models/teapot/default.png",
+      "bytes": 113,
+      "sha256": "aec68342b36d4fafd8b8da6c3f97525b70d820e10d0753d2e64aa24011a35155",
+      "status": "upstream-verified",
+      "license": "CC0-1.0",
+      "source": "https://casual-effects.com/g3d/data10/common/model/teapot/teapot.zip",
+      "metadata": "https://casual-effects.com/g3d/data10/common/model/teapot/info.js",
+      "notice": "docs/licenses/CC0-1.0.txt",
+      "note": "Unmodified file, matched against freshly downloaded archive. Martin Newell; archive version 2011-07-27, modified by Kenzie Lamar as described by archive metadata."
+    },
+    {
+      "path": "VastApps/resources/models/teapot/teapot.obj",
+      "bytes": 868777,
+      "sha256": "6e5d123af85bcbf52a8c9da1ff970b78eda41a9188418a1cb6b8b3696a683a7e",
+      "status": "upstream-verified",
+      "license": "CC0-1.0",
+      "source": "https://casual-effects.com/g3d/data10/common/model/teapot/teapot.zip",
+      "metadata": "https://casual-effects.com/g3d/data10/common/model/teapot/info.js",
+      "notice": "docs/licenses/CC0-1.0.txt",
+      "note": "Unmodified file, matched against freshly downloaded archive. Martin Newell; archive version 2011-07-27, modified by Kenzie Lamar as described by archive metadata."
+    },
+    {
+      "path": "VastApps/resources/noise/noise.png",
+      "bytes": 99770,
+      "sha256": "8ffbd7873d83d3c5f6a3d90c71c2ce134f05191c888ee14009930c056066451c",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise2d.png",
+      "bytes": 99804,
+      "sha256": "d319fb7a10c681fcd8e7c6fb2ef1e9939d2e9cd502c2e0c0d09de6cd080cdfec",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise2d_64x64.png",
+      "bytes": 7240,
+      "sha256": "9f3206523b1236975d5e7f6c7162c6c9565cdffc7f55524b66e094a63bfec426",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal.png",
+      "bytes": 121088,
+      "sha256": "f90d6e9d7ac6aeea28d7b56af78bd6325046ab16393866a32d2518a826112220",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_2.png",
+      "bytes": 121139,
+      "sha256": "82ae081935c675166cdcd444640011d9e0c829a95fe8edc53cb3ec89061c66a4",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_256.png",
+      "bytes": 120983,
+      "sha256": "efc5d2d2f21135cb8f721fe3077e6a0a931e8548bf4d7a327c55d53bdc3da194",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_256a.png",
+      "bytes": 121154,
+      "sha256": "ace90b9277baf57c16ee9a1f13d5bc454d77c519071acddb8c7a32f2a3187f26",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_512.png",
+      "bytes": 480141,
+      "sha256": "b648562bb2375348e68e037f89249fec5bd3a75904069c68d00184cbbfa9a904",
+      "status": "original-replacement",
+      "license": "MIT",
+      "source": "scripts/generate-demo-assets.py",
+      "notice": "LICENSE"
+    },
+    {
+      "path": "VastApps/resources/sfx/blockSelect03.caf",
+      "bytes": 8614,
+      "sha256": "3c9c25ee759e8d916126e19a1c9e963469ad154589eb014b681c39870f206fba",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop1.wav",
+      "bytes": 529318,
+      "sha256": "17cd7753b2e1984985e4a1db6be258c283a452be890b215da1387ac9d42b8556",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_001.mp3",
+      "bytes": 48965,
+      "sha256": "8352ef4d49570cfe81ff6e95aac209a4a56be979d9ae56c66d761fd0f17ffc97",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_001.wav",
+      "bytes": 795580,
+      "sha256": "400e0d6bdf4ebe5ccc0904d5b621c2b566772c031d934ee547ba561b4d53720f",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_002.wav",
+      "bytes": 795580,
+      "sha256": "9ec80fa355382f60010495f8f5ae8f70804cfc83e378d9c014aac054e0783042",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_003.wav",
+      "bytes": 795580,
+      "sha256": "191dc19b783801cbc26cf962ae30f56cb785a6d3badc2cbe2976585284d788a7",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_004.wav",
+      "bytes": 795580,
+      "sha256": "2d45bd8f65ca72243bfe3ca5836e2919c81ee7aa9b4a6223446db52bada7adad",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_005.wav",
+      "bytes": 795580,
+      "sha256": "116bc6c8a179b7b94debd174e03e4e7f62142d9ec2159f52fae8a2142d780305",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_006.wav",
+      "bytes": 795580,
+      "sha256": "a8271340c9bf0e9d3b542041223777abf05650caccd65f94dffa578c7cb21978",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_007.wav",
+      "bytes": 795580,
+      "sha256": "354cdd64ab600be080b6239624c68a5390edd904bfeba6bcf3d7b8bff5a69433",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_008.wav",
+      "bytes": 795580,
+      "sha256": "685dfd7221310774d26dd8f2fa947f8d85202c809e89a4cc06df551eec545c69",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_009.wav",
+      "bytes": 795580,
+      "sha256": "4f05e726f5cfa42751eddebbb1734eb5b4deb22db8a8df4585716aba5c67ad62",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_010.wav",
+      "bytes": 795580,
+      "sha256": "94e3bf92435d4a10e97141ff4a35559bea07457b00831bc2d493ea893b5965f3",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_011.wav",
+      "bytes": 795580,
+      "sha256": "e9846030c502f2b2c29ccdefaa42251a6fde3811d28009db0a7e4a6b526b035a",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_012.wav",
+      "bytes": 795580,
+      "sha256": "ab3d50a5bda8a9b27dafe5c02a8c0f51445aec128f3a66e37707bf5cd9490f63",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_013.wav",
+      "bytes": 795580,
+      "sha256": "be6a79ddf5068f73d3dc1edcf663087a539d15d229ae47b722d9d1c6658a180f",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_014.wav",
+      "bytes": 795580,
+      "sha256": "1a8d82b6d5c45e6e9d1c555a7b4e798590d0f1335b54eee2f83e85fdd0e22fd0",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/blop_015.wav",
+      "bytes": 795580,
+      "sha256": "b0aa9d94165baaa220ef21107b038bdd3442a4ce6d8bf16dfe46b6aa93101599",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop1.wav",
+      "bytes": 529318,
+      "sha256": "e3cd41530fa83c4159de39a9db513a72ad7ab0b8cae6853401836d0374fa3493",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_001.wav",
+      "bytes": 529318,
+      "sha256": "e3cd41530fa83c4159de39a9db513a72ad7ab0b8cae6853401836d0374fa3493",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_002.wav",
+      "bytes": 529318,
+      "sha256": "284240358c1d15d852274b0a371ea13a839db1ffffa48b4934961992f4194a32",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_003.wav",
+      "bytes": 529318,
+      "sha256": "199acb4186339e6a40eda30193a4d372dbe83b871390de0cef31af1c78451026",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_004.wav",
+      "bytes": 529318,
+      "sha256": "b7ac49b54075a7a66c4ce1dc646edf0a1b7eaf1a38dc309d493a0e1ba79da1ec",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_005.wav",
+      "bytes": 529318,
+      "sha256": "98f33502fd303932e9c7ee3908e1b42d1d07a70b6dca93dc7335fa7884052967",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_006.wav",
+      "bytes": 529318,
+      "sha256": "4ac0d31744f82fc12f44398bbb7d3d13fc90a7277f2bf1bed8d709fdec753884",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_007.wav",
+      "bytes": 529318,
+      "sha256": "ed4c1c41dbf9b762554448f0c369d08e573e13e9094648d17d05db093b48f365",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_008.wav",
+      "bytes": 529318,
+      "sha256": "e916d75db0d9144d456327b31f9b654013c21b07976b1f0cf5d000d6ac52add8",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_009.wav",
+      "bytes": 529318,
+      "sha256": "cc2bd823234942d84471fc576ac12aecc557776c4a5e33d14921fb3fe9390447",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_010.wav",
+      "bytes": 529318,
+      "sha256": "2e8f0e713056a2d5731016fb5c6380dcf49aeafba30a4d6c744f1618bd9852fc",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_011.wav",
+      "bytes": 529318,
+      "sha256": "a19dc8a14fcb1f55ac858657c9f66fefb33805bdb1f93cf4e21c03fb362cf91e",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_012.wav",
+      "bytes": 529318,
+      "sha256": "dd56fdb344f73235e73d13792cd767ab5e3702a9d722ed048cab3ea2c7850e30",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_013.wav",
+      "bytes": 529318,
+      "sha256": "0f845497f67e2a54c227a19a788e8cc00e3a4aa6cce07b3b40b06b587b7c33e6",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_014.wav",
+      "bytes": 529318,
+      "sha256": "b1229da8132de856a0cfc4a90acc9621cff3312f7b2799192f1cb1fe306160da",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/blop_015.wav",
+      "bytes": 529318,
+      "sha256": "f0b599a0175f1220a1aac279b1d0624f27efeba7d4d4a6ec76f7f87cb1093586",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/undo.wav",
+      "bytes": 352918,
+      "sha256": "0957d99568605df78ae27d344a331a6451ba57be2aef474a2d133330380d26da",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_A_001_001.wav",
+      "bytes": 330866,
+      "sha256": "7c8f1eff2dba9b51947d2cf903a305e7dbabb566a20d9655e054787a468c1108",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_A_001_002.wav",
+      "bytes": 330866,
+      "sha256": "5da5fafb8c86f956cfbd145c3b61d1d1ece9a47e28305bea28d9ec49b2c1f594",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_A_001_003.wav",
+      "bytes": 330866,
+      "sha256": "bb23f57af226068a1f92ccb35dd583d5b0559d4813c0ef3eff33fce8822da1cf",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_B_001_005.wav",
+      "bytes": 352918,
+      "sha256": "6bcb1f0c16d5dbb3bb9b51093c1e2a94dcac30ac1afb47c2ba14eda2dcd4eb02",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_B_001_009.wav",
+      "bytes": 352918,
+      "sha256": "d6e8023266c76a032fb0d5959741f8f602dec5404134919c6d503bc0b5b3b436",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_B_001_010.wav",
+      "bytes": 352918,
+      "sha256": "9d503df3dd0d5d1672f8f3aae8b2cd9c9208f16dc6d7a14aaa7d656bb91d3918",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/vast_menu_sesh_B_001_012.wav",
+      "bytes": 352918,
+      "sha256": "46705545608f9ae4ad994e05ad10ada498872bd849ec5f8593ce5876750e6f18",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/warp.wav",
+      "bytes": 352918,
+      "sha256": "082f3ceb79e1f591060e70e56584645978b06d9318439ecdbd4eb4d61eddc822",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/undo.wav",
+      "bytes": 530636,
+      "sha256": "9460bbf23411ebbef89f872009b283d1db96c10e65e7cd75e342daa8f05a69f0",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_A_001_001.wav",
+      "bytes": 497514,
+      "sha256": "00e4c78d2420a1732c2f9e75396679111fc0101b20188622c62d9bf1eba49ff7",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_A_001_002.wav",
+      "bytes": 497514,
+      "sha256": "1994e0c626bbf4be8fed3d6268e1cf18ec1795a8f29f718d79166b26895804b6",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_A_001_003.wav",
+      "bytes": 497514,
+      "sha256": "dd40bd7c71f71ced31133ee64dedd97cdafaad97b36182cf7fba53e63f94b121",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_B_001_005.wav",
+      "bytes": 530636,
+      "sha256": "a2234db6d6c201867dc35d7c9e32d5eaebe96127b84daafa55d8bc2f9e4f98f9",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_B_001_009.wav",
+      "bytes": 530636,
+      "sha256": "45b5fdd04b71e27600ee8e7e1168a4a7c8d2d50e4d176029f092586e35e64043",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_B_001_010.wav",
+      "bytes": 530636,
+      "sha256": "05b49182e19ce1e962409d9ed5c89487eab4e4ef8f2c40abe2c22c5cd7ee3efa",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/vast_menu_sesh_B_001_012.wav",
+      "bytes": 530636,
+      "sha256": "d5d31bedb99d4fd3ade99622f233c2b94c2540f0aa653772a1066c6a7a0aa131",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/sfx/warp.wav",
+      "bytes": 530636,
+      "sha256": "408c0c0b4558ba367f35da92ffe3e65d895d2ca7e1aa90e6d817354b5d68a1a1",
+      "status": "owner-confirmed",
+      "license": "MIT",
+      "source": "Owner confirmation 2026-10-14: all sound effects were created specifically for this project.",
+      "notice": "VastApps/resources/sfx/LICENSE.txt",
+      "note": "Audio unchanged. Project owner explicitly authorized MIT licensing on 2026-10-17; project-specific origin confirmed on 2026-10-14."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/RenderTarget.fsh",
+      "bytes": 171,
+      "sha256": "58f06997aa56c36acf65f3aff91fd23549e72767ba603ec49e3240789237b35c",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/RenderTarget.vsh",
+      "bytes": 348,
+      "sha256": "705f3c95dfa74de9695bdaead9b01adc1392374fd2709bf3ac25601719da7583",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/Shader.vsh",
+      "bytes": 435,
+      "sha256": "de6af983cce7bda25a4de3d5a00c80538d12c3654f9b151ede14eb28c3e6115d",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/ambientObscurance.fsh",
+      "bytes": 6835,
+      "sha256": "d3d484409aa9e8510c44008580ff8f3615e90b3378935990dd89859dde23b99b",
+      "status": "licensed-adaptation",
+      "license": "BSD-2-Clause",
+      "source": "https://research.nvidia.com/sites/default/files/pubs/2012-06_Scalable-Ambient-Obscurance/SAO-demo.zip",
+      "notice": "docs/licenses/NVIDIA-SAO-BSD.txt",
+      "note": "Original NVIDIA grant recovered from SAO_AO.pix; full notice restored in each derivative. Project adaptations are described in source headers."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/ambientObscurance.vsh",
+      "bytes": 302,
+      "sha256": "be656f328c62d96903ffabe1e26c258e77b1c07de302eb6abc8152f42a944b8a",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/amplitude.fsh",
+      "bytes": 1115,
+      "sha256": "484a16cd4a0ea236b7c1f05cce724c8d96f1417d1154da0a8b1cde5e23228cce",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/blinnPhongGeometry.fsh",
+      "bytes": 1161,
+      "sha256": "84b962ac1ef5171ae2559411e8acdc6de6a76176694049e0441d750004075b55",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/blinnPhongGeometry.vsh",
+      "bytes": 1377,
+      "sha256": "59d21c30a01cf66bf658ab1b7470841beced286453549b42c1bf0121c9c11ae6",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/blinnPhongTexture.fsh",
+      "bytes": 1263,
+      "sha256": "f2afbedbeec057d91e50c7171482714b00a3c3c452a034a20be2c856950f1fa3",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/cherbyshevShadow.fsh",
+      "bytes": 2701,
+      "sha256": "80c3b5606b6aba00222f7722a07b9e20a1ff956afbc109174723bbe6cebadbd7",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/cherybyshevShadow.vsh",
+      "bytes": 543,
+      "sha256": "916de87e554f4bb208d5a46b8cf783a088c1f396cd96738d1d3b611b5721774c",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/colorMenu.fsh",
+      "bytes": 313,
+      "sha256": "6e2d03e6ae2a0e44688b9c75a93962ab97fd020f2b2d888d0dde17bb314620e5",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/colorMenu.vsh",
+      "bytes": 679,
+      "sha256": "4948a6fff94a9360d8462394ff04e806eebce224c15e7bb54f6996792ace79c3",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/filterShadow.fsh",
+      "bytes": 3915,
+      "sha256": "0e78694ebd54357d6a61a4a81dabb0306b653ac20760424143643a198f18eb90",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/filterShadow.vsh",
+      "bytes": 381,
+      "sha256": "2a4e1e0f1a220f0f774b27bfe874489e8fd0018be7a30180bba2eda48801cd00",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/fontShader.fsh",
+      "bytes": 609,
+      "sha256": "b24b2aba95151dd6d2f9024e7ecaca36f1841759bf96b321177e063747235086",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/fontShader.vsh",
+      "bytes": 573,
+      "sha256": "5f3f6bfda845f81a599764765ecf2fa0de492523f5cbe020c69f3629eba49614",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/galaxy.fsh",
+      "bytes": 1211,
+      "sha256": "d7d5148cd26008ccd5d225bebfc29fa9c43d8340313914afeacc3936926c2e03",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/geometry.fsh",
+      "bytes": 207,
+      "sha256": "5ab43a79a177fcb3400cf673e53618c57d378e49821db0e2f81ca4a5faf5cc91",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/geometry.vsh",
+      "bytes": 566,
+      "sha256": "ea134b37dc6fa80a83f555cb7ee74b44fac3ca9ded0573b7fe2df6f335cf40dc",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/postBlur.fsh",
+      "bytes": 909,
+      "sha256": "74299fab8567f52d1ac70bcf7369f0b24bb6df4d21c6222ed376e5014a6f9e64",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/postBlur.vsh",
+      "bytes": 239,
+      "sha256": "4f59f3f4836a3892f6e8cd8fdc7701dd119b733b5a5dc391920bfab6f0b7e942",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/rawFont.fsh",
+      "bytes": 345,
+      "sha256": "cdf8901a7eb57699c16d70cd928790fe6742522907de0f339530de1184da4d93",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/rawFont.vsh",
+      "bytes": 478,
+      "sha256": "110cf05527effbc84669ee1f35e8bde3cbd66799facf020ceae9b96b38da5a32",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/solidBackground.fsh",
+      "bytes": 143,
+      "sha256": "db0a38df2298a2cc4065c1e966d3b181598d306edf9e299ba8860f7f09094743",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/tex0.fsh",
+      "bytes": 239,
+      "sha256": "b7252502f2faa2dedcb4b5745d94b47696bcc0fa0609b1d27267a08f6dcb9f42",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/tex0.vsh",
+      "bytes": 528,
+      "sha256": "718a9b304ebb6a0ce8c19010415e72bee853dd1952564b51d5b4621bc0241571",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/texDebug.fsh",
+      "bytes": 144,
+      "sha256": "4f2643114c5d99a45548c024c50c8734b0c5e2f822779fa38615b96c10b4a8f1",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/texDebug.vsh",
+      "bytes": 361,
+      "sha256": "1faed86eeea37b19ef9ed7380dc66b544d51ce3279612a28402156546e4d0b4b",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/RenderTarget.frag",
+      "bytes": 171,
+      "sha256": "58f06997aa56c36acf65f3aff91fd23549e72767ba603ec49e3240789237b35c",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/RenderTarget.vert",
+      "bytes": 304,
+      "sha256": "542213502dfc59a3745dde8fbb0ef7d8320a59102b1bbaf6f2340dc265a0c99b",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/Shader.vert",
+      "bytes": 391,
+      "sha256": "3d717ae146e3168c573e66749118230c8182585e706dabe738aed62f7aee06cc",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/ambientObscurance.frag",
+      "bytes": 7113,
+      "sha256": "173e7d2f1d4a791323b83a85bc272452ae77921a9b4775b689ef75dc15d39e47",
+      "status": "licensed-adaptation",
+      "license": "BSD-2-Clause",
+      "source": "https://research.nvidia.com/sites/default/files/pubs/2012-06_Scalable-Ambient-Obscurance/SAO-demo.zip",
+      "notice": "docs/licenses/NVIDIA-SAO-BSD.txt",
+      "note": "Original NVIDIA grant recovered from SAO_AO.pix; full notice restored in each derivative. Project adaptations are described in source headers."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/ambientObscurance.vert",
+      "bytes": 348,
+      "sha256": "299cef369bdbf6e3f03b702092cbfc0812785660326e91392e09b9d100a30b9e",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/amplitude.frag",
+      "bytes": 1115,
+      "sha256": "484a16cd4a0ea236b7c1f05cce724c8d96f1417d1154da0a8b1cde5e23228cce",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongGeometry.frag",
+      "bytes": 1624,
+      "sha256": "3397987b5f3743c4bad4dfb9c492ef050baf73a0ebcd69febe6e23ca06e8e88c",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongGeometry.vert",
+      "bytes": 1715,
+      "sha256": "3c83d2797ba4e58e3c778a2f19b6fd40eac1e34a6915338f5b6a2dad7013492d",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongGeometryInstanced.vert",
+      "bytes": 1689,
+      "sha256": "ebff71ed6cdf083f8e4d164be540b46a2410d0ab947e9e61bc0e73a4aeef8540",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongTexture.frag",
+      "bytes": 1278,
+      "sha256": "b5571d16c0621597519623cb3b980dc2459c79d577d3bbd506c5e552f3e7dd5b",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/cherbyshevShadow.frag",
+      "bytes": 2701,
+      "sha256": "80c3b5606b6aba00222f7722a07b9e20a1ff956afbc109174723bbe6cebadbd7",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/cherybyshevShadow.vert",
+      "bytes": 527,
+      "sha256": "63c8f51bee197f837e2b834bf27664a2ccc126a76047c1147cab0040af6aa3e5",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/colorPicker.frag",
+      "bytes": 789,
+      "sha256": "a358dcbf2b84376c5021a5b3551628f4c97bedc4eb930f391c99595d0c1f041f",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/colorPicker.vert",
+      "bytes": 970,
+      "sha256": "10d3ecaa145809834b29473c44e3f92e1882a8ccd52760020899bfc58fd30531",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/debug/texDebug.frag",
+      "bytes": 160,
+      "sha256": "b2c3137af3faf426495824a11bcf7137409688dec5ca2160a09b108bed7788e1",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/debug/texDebug.vert",
+      "bytes": 384,
+      "sha256": "77290cca8377662bc47c7638c8132ffe8d7e387753c3df12ad924e1e64483d3e",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/decal.frag",
+      "bytes": 888,
+      "sha256": "cad5a1547942cb4767a368d458f2a66e239412fd91327bd124956a5d95b25a58",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/decal.vert",
+      "bytes": 966,
+      "sha256": "38c9c395c9b2f607133d37c0088dbc6f43aa64483f7e464372e3b4791a936b01",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/distanceField2d.frag",
+      "bytes": 1505,
+      "sha256": "7a192f5539f7f5a7dc66b0b25628d57ce53196e3f7208ab4e222e1d72642fa88",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/distanceField2d.vert",
+      "bytes": 535,
+      "sha256": "260dc563cae70b11775f5ad81b3e0d76fa85dfc7908eece080765713958a6bc8",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/filterShadow.frag",
+      "bytes": 4957,
+      "sha256": "5387850e2a7384c081a7132eb4b0adb852eee1fb44f948ee6c421a45a7041333",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/filterShadow.vert",
+      "bytes": 405,
+      "sha256": "f5cbc285a0ede71527d05085cd69d762e8b2fa10fbd4bec7eb20ec60ca553819",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/fontShader.frag",
+      "bytes": 586,
+      "sha256": "ea575a359341c0331f4df1c025b4527571d2ee8a3fd88bab7c0b39a43250d9a4",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/fontShader.vert",
+      "bytes": 535,
+      "sha256": "260dc563cae70b11775f5ad81b3e0d76fa85dfc7908eece080765713958a6bc8",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/galaxy.frag",
+      "bytes": 1325,
+      "sha256": "d97af4f7387f41ef24cf1af8efdce5e90049531c7ffdbb8d51d58d598b6a4032",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/geometry.frag",
+      "bytes": 647,
+      "sha256": "a68d44075d8de8a81aa596b2d531b411e60f550a5a256762b867e62956c1c714",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/geometry.vert",
+      "bytes": 1020,
+      "sha256": "7a2daeac3264dee3f520993c7689dedf98b401e101042c161c4515717ebe350f",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/grid.frag",
+      "bytes": 937,
+      "sha256": "4ba3fa1bfd887e1ae41c911b13f09ab34c110897933e0739344735b08f21c145",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/grid.vert",
+      "bytes": 964,
+      "sha256": "d2fb9c8cba44449c2278afcd9958cd92e057da4fb1582dc490b69b5c996d6254",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/huePicker.frag",
+      "bytes": 1063,
+      "sha256": "984e7fa6f3065afc7ad4da4348b6ad9fc227685602cabadce2e88aadb313746b",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/huePicker.vert",
+      "bytes": 965,
+      "sha256": "b3a6c9b99a923e026a67c79a3465cadd912babfdeac78b406c7632fd24872f7f",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/lightingGeometry.frag",
+      "bytes": 1282,
+      "sha256": "6241b13a97f5a8bd53afe17595f427bf1803f8ce42be31c16c6d410a18baf1c1",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/lightingGeometry.vert",
+      "bytes": 1313,
+      "sha256": "e8835ca67e31b1e1d57ef0ae01bba32cfa1a29feb3013f049655bc4ad15001c4",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/postBlur.frag",
+      "bytes": 824,
+      "sha256": "15afeed46d0cdbda0d66341570138126861e1ccd0119ee601ba4b86c21e25bd2",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/postBlur.vert",
+      "bytes": 260,
+      "sha256": "d356c94a6dbd7a0c05ff26446eec6c94f290e9ef185bfaaf063cd9ea038b4486",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/rawFont.frag",
+      "bytes": 345,
+      "sha256": "cdf8901a7eb57699c16d70cd928790fe6742522907de0f339530de1184da4d93",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/rawFont.vert",
+      "bytes": 426,
+      "sha256": "49e79baec32f523fbebb62f36a62f0bc53fcc3276db8b99504b5997100dfc717",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/shadowMapToEye.frag",
+      "bytes": 3290,
+      "sha256": "02a64cb0096b3d3dc88e40166f04b3aee23dc54c7fe46fbe6878d059ee568fdc",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/shadowMapToEye.vert",
+      "bytes": 820,
+      "sha256": "39d819f3195519e6d12f22167a0b05b50259b5600e46ef3824a22d0930e44449",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/solidBackground.frag",
+      "bytes": 138,
+      "sha256": "d0f807c3f06e8805b924f1432e3fede08b42bc40326e327f6442dc7f61fe9ea5",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/standardGeometry.frag",
+      "bytes": 603,
+      "sha256": "93315625d29a8af1762762af4acf29a769ae838659084e0d1bca7f99f566d159",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/standardGeometry.vert",
+      "bytes": 643,
+      "sha256": "38368fbd0e6b3a5b66be3a4ccd2f6c9a942c298878797a1593c6907b28279f6a",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/testShader1.frag",
+      "bytes": 119,
+      "sha256": "f6eb466c2ce1c662ad0be4a985e417ec1badd661463b0c0d6d6a75cecf25e76e",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/testShader1.vert",
+      "bytes": 238,
+      "sha256": "01a84d29022911246ec66b99a39e6b86ad3c64b5056b1696302c755c38a81122",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/testShader2.frag",
+      "bytes": 355,
+      "sha256": "d1681ad957598d6fe0f92ca0f274c56f98d7939abb1fae0cb00793c982f0ba65",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/testShader2.vert",
+      "bytes": 319,
+      "sha256": "a9dc667cd213db2aff5e932905f5859e210cac145a1282228b1f49fad52af869",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/tex0.frag",
+      "bytes": 338,
+      "sha256": "6b85adb37d4fbf3ff7d16b464f575e84b37d6b9261a7c19867f5323b0d10b83f",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/tex0.vert",
+      "bytes": 467,
+      "sha256": "ef6f4b8665ac22f22c389c7e9cc173ba676487b871d342c0a38d7200e17b10fa",
+      "status": "project-source",
+      "license": "MIT",
+      "source": "Original project shader or original replacement from the 2026-10-14 review",
+      "notice": "LICENSE",
+      "note": "Explicitly borrowed unverified blocks were replaced or removed; see docs/math-snippet-review.md."
+    }
+  ],
+  "changes": [
+    {
+      "path": "VastDevKit/lib/difont/examples/HelloWorld/windows/HelloWorld/HelloWorld.ico",
+      "old_sha256": "4076ba4dc4f0d61203d39eaea174d0ff283a98965498896e22bd1d0f00b77310",
+      "old_bytes": 2998,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/lib/difont/examples/HelloWorld/windows/HelloWorld/small.ico",
+      "old_sha256": "4076ba4dc4f0d61203d39eaea174d0ff283a98965498896e22bd1d0f00b77310",
+      "old_bytes": 2998,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/arrow.png",
+      "old_sha256": "ad945ec26cc57010b4fdc86d7305899c52bddd971a5181129ebd5faf47b63459",
+      "old_bytes": 901,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/boxIcon.png",
+      "old_sha256": "e5bc5ddedfee5896b43c9092818291823b8383630287ccb52b33aa6edf2ca5d9",
+      "old_bytes": 553,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconCylinder.png",
+      "old_sha256": "08fc4bc70573c071c41f279aa6d1e222a21383ebd99e82c34f7b6613249a9940",
+      "old_bytes": 872,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconHexagon.png",
+      "old_sha256": "8a585c56a2b2954bf4cddd6187cdf159d392e06a5af23273095031a39fbe7e3d",
+      "old_bytes": 828,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconJointDistance.png",
+      "old_sha256": "833f1ea5fa857a040ade5766b9edd59e0b8ad9cda215da8b96556803827fb3e6",
+      "old_bytes": 799,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconJointRevolute.png",
+      "old_sha256": "49795d4056d080fe808d3b3d8e07447d65939823dfe852cf16c6148602ada937",
+      "old_bytes": 922,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconMultistar.png",
+      "old_sha256": "60105cfad68d848990dcc2de05e9a52c386a4819e746827b6bee670fee336178",
+      "old_bytes": 1358,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconPrismaticJoint.png",
+      "old_sha256": "26a1fa8b4c45de02d77cdfa9264a35947a2d9840143b4624d31444074f63e18b",
+      "old_bytes": 738,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconSpikes.png",
+      "old_sha256": "459f058e8b05a109f9446ba69c79a27376a8968f625021e2aafb35208478bc86",
+      "old_bytes": 538,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconStar.png",
+      "old_sha256": "5116c8e60911d5ea2e702118cc148430a410ad1fde04f9bd1ca125f1d8ac16d7",
+      "old_bytes": 1211,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangle.png",
+      "old_sha256": "673d514cc1fdb05dc635fcb19e372d71a3ba7d6a2675e9764a35d385835756e2",
+      "old_bytes": 677,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangleFan.png",
+      "old_sha256": "8824b0dd897e69777fbb74082a73710901ebe8cf049709c20145bf3cf1985212",
+      "old_bytes": 1458,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/iconTriangleStrip.png",
+      "old_sha256": "f740116e6ed1a9fef96ba2b28e008e588fe36f5603ac5af4e361abad6d58776e",
+      "old_bytes": 1217,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/foxtrot/Resources/jointIcon.png",
+      "old_sha256": "31f9cffbb2f02bf4c16931c67744da7e1b3c30225f93fd2a899b6747a95efc9f",
+      "old_bytes": 855,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/arrow.png",
+      "old_sha256": "ad945ec26cc57010b4fdc86d7305899c52bddd971a5181129ebd5faf47b63459",
+      "old_bytes": 901,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/boxIcon.png",
+      "old_sha256": "e5bc5ddedfee5896b43c9092818291823b8383630287ccb52b33aa6edf2ca5d9",
+      "old_bytes": 553,
+      "action": "replaced"
+    },
+    {
+      "path": "VastDevKit/toolkit/tango/Resources/newImage.png",
+      "old_sha256": "96a467766787a4e42de032d966f9a0bc5b43984aeb093dc4f0e31ceb11624acf",
+      "old_bytes": 6335,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/ic_launcher-web.png",
+      "old_sha256": "db86d769eb995f6e1f3deba0b084897b095d85e90634c20abdb28790a3529036",
+      "old_bytes": 51394,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-hdpi/ic_launcher.png",
+      "old_sha256": "a57c8e1aae433004c6891b310d32999ac68a5914c9c393ade08d760b0ccae051",
+      "old_bytes": 7658,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-mdpi/ic_launcher.png",
+      "old_sha256": "a58812a7783ac0227596610f95047b59ef896c05430c4e8f75a35787f7a928af",
+      "old_bytes": 3777,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-xhdpi/ic_launcher.png",
+      "old_sha256": "c3be82b0ec866f3354b50e4d1a92cb424b7e39358624126ae796c1899031e490",
+      "old_bytes": 12516,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/4x_Resource_Game/android/res/drawable-xxhdpi/ic_launcher.png",
+      "old_sha256": "d588f77b57daaad7f1f4b56b070f2ecbc07a1e1c947fb7ddd273148d8f18079f",
+      "old_bytes": 24777,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/3949.jpg",
+      "old_sha256": "c9caeaa7f0d470e372f9a21732a6b3bcecf02428e3002245f5f8ba2123e86f17",
+      "old_bytes": 3668248,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/Shader.fsh",
+      "old_sha256": "57b968695a394b2f1d181c91486b48c0b16357b4dcd8c771ffd0f7d3ed0cdb90",
+      "old_bytes": 3351,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/anvil___spherical_hdri_panorama_skybox_by_macsix-d6vv4hs.jpg",
+      "old_sha256": "118c3ed8e5902068b94398e41c12557df31f5b78d163061b675714f3f5f940f2",
+      "old_bytes": 77163,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/color.fsh",
+      "old_sha256": "c6d2732430ebc4194d9cf20f0756e3bd902517d3137fee73ec555757135a3b79",
+      "old_bytes": 1000,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/desert.sphere_skybox.png",
+      "old_sha256": "8c09c6e024067a2cb1086c7d454c742337f2570e660a23ed5b6820a32d263402",
+      "old_bytes": 465957,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/femshep.png",
+      "old_sha256": "a4304803e63204e957ccf98f9868528ad7e188c9c64c5d6058174dc3037797d5",
+      "old_bytes": 439611,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/free_skybox_1.jpg",
+      "old_sha256": "8392d89ac3442c2fcc36d474f8ec3eaf77478ee656556efa0d89d5cbddf2f572",
+      "old_bytes": 156811,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/galaxy.fsh",
+      "old_sha256": "197721ba6a9affc2322c6e75eb4c9b152ac1858459c576b0275db94445eae11f",
+      "old_bytes": 4034,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/moon.sphere_skybox.png",
+      "old_sha256": "f2492235695b65395fe959217d21a805f498de3b86484579db6e11f18136f357",
+      "old_bytes": 1494802,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/noise.png",
+      "old_sha256": "16b4145136bf0cf347a93b619aab1004f446e68444b8637de46d38a8f1e230f3",
+      "old_bytes": 68376,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/outline.fsh",
+      "old_sha256": "1577a6cdb8df8a0723e03c91fbf3dc5cf4b98f09cec7895c0a2f661215d76bb8",
+      "old_bytes": 877,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/pc.png",
+      "old_sha256": "96f1d3cde7854366b0827bd841d6d20ed7239243cc463d7f85807ac595ed832b",
+      "old_bytes": 3254,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/sky_Moonscape.jpg",
+      "old_sha256": "417d97e6cedb1b881bccb65308028e8050eef16b8150d77540f038a8589100dc",
+      "old_bytes": 1494120,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/skybox.jpg",
+      "old_sha256": "2f64e52d47f0c608bb0a59c3f25481f3822c82cea657aea7474bd541e72fa1cc",
+      "old_bytes": 2051540,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/sunset.sphere_skybox.png",
+      "old_sha256": "2fa7996f1042db6b277cb5344a985701b910effde694a82abcd203e1b37a2560",
+      "old_bytes": 512727,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/todo_audio.png",
+      "old_sha256": "868aec4fc33904174b6caa3e09ad66c452d8943ae0a2cc808f97328077b18e07",
+      "old_bytes": 101357,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/tropical_sunset___spherical_hdri_panorama_skybox_by_macsix-d6vv30g.jpg",
+      "old_sha256": "800d4953ae1debe321e91ca3b46d9c5114f76152921fd6878e39cd86b74c04e8",
+      "old_bytes": 84394,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/wood.png",
+      "old_sha256": "e19853e43d5fb38fa3ff192953911deb8a84c75add9bd1e4c4d3d34c172b3d94",
+      "old_bytes": 32453,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/PhysicsHotel/resources/work.fsh",
+      "old_sha256": "9bb9910a1b82e189b4cfa0fa175ccc65d659a688ef738f25c028be7176b0a1b3",
+      "old_bytes": 2009,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/ic_launcher-web.png",
+      "old_sha256": "db86d769eb995f6e1f3deba0b084897b095d85e90634c20abdb28790a3529036",
+      "old_bytes": 51394,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-hdpi/ic_launcher.png",
+      "old_sha256": "a57c8e1aae433004c6891b310d32999ac68a5914c9c393ade08d760b0ccae051",
+      "old_bytes": 7658,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-mdpi/ic_launcher.png",
+      "old_sha256": "a58812a7783ac0227596610f95047b59ef896c05430c4e8f75a35787f7a928af",
+      "old_bytes": 3777,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-xhdpi/ic_launcher.png",
+      "old_sha256": "c3be82b0ec866f3354b50e4d1a92cb424b7e39358624126ae796c1899031e490",
+      "old_bytes": 12516,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/VastBuilder/android/res/drawable-xxhdpi/ic_launcher.png",
+      "old_sha256": "d588f77b57daaad7f1f4b56b070f2ecbc07a1e1c947fb7ddd273148d8f18079f",
+      "old_bytes": 24777,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/00234_full.jpg",
+      "old_sha256": "4c7a486bf9b8b58d47dfcda8596e76219dd69dc8f636dc93da1cedb4bae2837d",
+      "old_bytes": 909739,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/1450318.jpg",
+      "old_sha256": "2b090bf46387c5ad2270fa1957ceeb25f74b76e039f45b78d826ac2b49c1458c",
+      "old_bytes": 1533768,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/PANO_20150108_111723.jpg",
+      "old_sha256": "c7449e3d99b330972d6658fd3a726502b4b755a9a2afd71c21f3dca95ae858e7",
+      "old_bytes": 4829369,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/PANO_20150108_111723.png",
+      "old_sha256": "be8883ef04cc29aa22ae1b805c8260d58a51cac3665c29cb11edab9b58980e5e",
+      "old_bytes": 21259910,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/eraser.png",
+      "old_sha256": "e8df13c560d7a1c245d30db7debfd4fca31ce430470c11c053ccb883227540ff",
+      "old_bytes": 11985,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/fa-check-off.png",
+      "old_sha256": "d7862f09e1536f037765abcba3896bbadcff9e40bbe640a97f17d482cfc92f4b",
+      "old_bytes": 1555,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/fa-check.png",
+      "old_sha256": "d4c9cd5b681a13d76f3885f1dbe7edf7946d831971cf04310676b760a4339e9e",
+      "old_bytes": 2837,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/gradient1.png",
+      "old_sha256": "d1210d2fc0625fc91245edcb644cd5df3c243d5812ba39390efbd276e1d3cca5",
+      "old_bytes": 148420,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/gradient2.png",
+      "old_sha256": "7443de1bd829cc75938427b8c6a80b46b01fa8c293d02e0d86d162d5f4ba81a5",
+      "old_bytes": 732077,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/gradient3.png",
+      "old_sha256": "95529fabd762fcc9edeb273712fa6fcf3cf6d4265a9147ca210f4a586018e49c",
+      "old_bytes": 1247368,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/gradient4.png",
+      "old_sha256": "38fc273694d1a95ebc86869cf6cac39838cd25a585e4b3711a80dbee601d30ad",
+      "old_bytes": 74438,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/gradient5.png",
+      "old_sha256": "77a8570ce00ffa3878a218a7ab4b0d575f3bc81b83de7f878a768a6c324b8064",
+      "old_bytes": 202534,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/grey-Gradient.png",
+      "old_sha256": "845da29037940a6d0c60c5b421998637c324c069fa310b50334bb690b3bf1c31",
+      "old_bytes": 17506,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/light-gradient_00375022.jpg",
+      "old_sha256": "28f01924520dad6c3471b723a9909c3f93c4489fcbec67d37ead566c86137041",
+      "old_bytes": 1159582,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/music_player.png",
+      "old_sha256": "d88ec0db1d2f7ddacd3c18fa5268c5ea8f1175ea7457462bd9ceeb1e83881202",
+      "old_bytes": 153576,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/paint.png",
+      "old_sha256": "35c5483fc9ee1539af8ae42de5d3b4ab580d2d03b14d52c2b351b21fed3d9d59",
+      "old_bytes": 28431,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/pencil.png",
+      "old_sha256": "a55d5d8e1f1812bcf362384771e3dd9c8e14dd75f4c495b9299d17e1d8efeb1f",
+      "old_bytes": 25122,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/reticule.png",
+      "old_sha256": "c968b9a8e85dfc378c8130e0a522eee11973dbb4f584c45bf66af362f31d02bb",
+      "old_bytes": 3269,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/target.png",
+      "old_sha256": "b6274c7f11aca8a190e35bb0f82a71e400e096210fa9ddfc3920e0f81fd6aeb4",
+      "old_bytes": 8892,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/vast.png",
+      "old_sha256": "53ddabd1c4deed97e5c60fb6689b5d1cfeb240e649cc9c74a6ec88b2746f52ba",
+      "old_bytes": 438518,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/wood.png",
+      "old_sha256": "e19853e43d5fb38fa3ff192953911deb8a84c75add9bd1e4c4d3d34c172b3d94",
+      "old_bytes": 32453,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/images/youtube.png",
+      "old_sha256": "3b8a5ed7e24fe85e3b3ce2908891b86deceeee645b54ee29f792e549689517a0",
+      "old_bytes": 1052037,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/models/models.mtl",
+      "old_sha256": "2b7e5fca7a5547c399a320bf09cbfefccaffdb074c9c82b4e9b97325d1a4550e",
+      "old_bytes": 892,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/models.obj",
+      "old_sha256": "ae9742f783a6c908bcf91c3624ac3d897363d3be715e73d0a238f7aeffd3e279",
+      "old_bytes": 2895752,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockA.mtl",
+      "old_sha256": "30d4d3d60e1086e2ab7aa7cad98b9d04bc887ffa09473f035e1eeda11cad3029",
+      "old_bytes": 236,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockA.obj",
+      "old_sha256": "453ae5bb3f8d5db587014b27f979887a111e57264409d07299d7018c3efd441a",
+      "old_bytes": 110072,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockB.mtl",
+      "old_sha256": "43bbcc9f2515c2598cf61b80327fe503eef05eddd68c4c1c5d10233a65a3acdc",
+      "old_bytes": 238,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockB.obj",
+      "old_sha256": "2d375587846b6c06a3ac4b26b10026197e9ebb16d2b527eb236d8bef6905e182",
+      "old_bytes": 127087,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockC.mtl",
+      "old_sha256": "ff5ab1f7752bf54b01db55f845bf1039fa857f12c8d5b597214de568bd38a627",
+      "old_bytes": 236,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rockC.obj",
+      "old_sha256": "9127a23a3a780c0202621b2163c673850629a1668b659aa9a8b48089833dfadb",
+      "old_bytes": 88959,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rocktexture.bmp",
+      "old_sha256": "acf786ce4dc3ca94aa18711b782e22213fa1e6f0aecfb256f90dddf7a71e50dc",
+      "old_bytes": 3145782,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/rocks/rocktextureNM.bmp",
+      "old_sha256": "4aca89ee0bd8f0a8d947ddaf6527f168d209d2df1c57664ff3613cbcf59f7081",
+      "old_bytes": 3145782,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/KAMEN-stup.png",
+      "old_sha256": "285a34824839dda92afeb1911101aa25b36542fa8a00675ce5ac0580b498dc49",
+      "old_bytes": 216292,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/kamen-bump.png",
+      "old_sha256": "0c1a4203de58916d6698f9e8b7b7828a218870c7f698e0aa4b5df044de092c10",
+      "old_bytes": 129255,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/kamen.png",
+      "old_sha256": "0416b96afb97aba9b54126b0e8ea1de808aaf0df0260ffa8f253b8d94f75228a",
+      "old_bytes": 398475,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/mramor6x6-bump.png",
+      "old_sha256": "14f6056a8ba4e386f0c05a70b0b15cbf8dd94dbb41700f7f4cb1bec23a7cdd2f",
+      "old_bytes": 4267,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/mramor6x6.png",
+      "old_sha256": "771a641b3bda6d8e961b83ea67b1f9bd98069358e21d372a0166c18c8f16d849",
+      "old_bytes": 218299,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/sibenik.max",
+      "old_sha256": "702b923f14b30a08f792845ce1e71d9131a32eedd658e6185718af73c2d411da",
+      "old_bytes": 13312000,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/sibenik.mtl",
+      "old_sha256": "83c967016950ad25a420c4f277ec92b42c4b3f2524c4c6f19a8d366c10e76cd2",
+      "old_bytes": 4227,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/sibenik.obj",
+      "old_sha256": "786134de73f1b40b0975af2e7bd969bc9a07d7411e6ad4ba1e30f3a5bde63bf8",
+      "old_bytes": 5202682,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/teapot/default.mtl",
+      "old_sha256": "51e1026e30f8a79c299086d14718c49efcd02ddfaf5744e12303f1f9f215aada",
+      "old_bytes": 281,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/models/teapot/default.png",
+      "old_sha256": "a44c7012ce55a147086ddd30a2645539be6ab8abc8355e76d109273b087f48ab",
+      "old_bytes": 3071,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/models/untitled.mtl",
+      "old_sha256": "b4f9532da3cdce519c7454b6ddaa30d980a92aeeaa7596a0ba6d910722dae705",
+      "old_bytes": 1874,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/untitled.obj",
+      "old_sha256": "04a33d47da5b9282b87bfa70d3d57fb175e05d73efce246a2c054922334f809e",
+      "old_bytes": 4476435,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/noise/noise.png",
+      "old_sha256": "16b4145136bf0cf347a93b619aab1004f446e68444b8637de46d38a8f1e230f3",
+      "old_bytes": 68376,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise2d.png",
+      "old_sha256": "0a1514f03bd1036272e3f420c1296bbd87c51f979e3c2807acb306d69c739477",
+      "old_bytes": 1342515,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise2d_64x64.png",
+      "old_sha256": "2a25430388f8d2570bb48dad4bbb5fd41e5bbea885c58a9529faa1616d741eb8",
+      "old_bytes": 9729,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal.png",
+      "old_sha256": "a92c2505b161e62df79b706c75369a3d630789a9c4646e7625b30a7fa670d458",
+      "old_bytes": 727741,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_2.png",
+      "old_sha256": "d622f7a0fe494ddb6a0c4046e710598cc8f2bf42bb8e6461beb776789b2560e3",
+      "old_bytes": 199321,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_256.png",
+      "old_sha256": "f6c0c36ee3f560dafc6f259911ed33577906f756867a2ade532198f226e78f7c",
+      "old_bytes": 160191,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_256a.png",
+      "old_sha256": "d622f7a0fe494ddb6a0c4046e710598cc8f2bf42bb8e6461beb776789b2560e3",
+      "old_bytes": 199321,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/noise/noise_normal_512.png",
+      "old_sha256": "a92c2505b161e62df79b706c75369a3d630789a9c4646e7625b30a7fa670d458",
+      "old_bytes": 727741,
+      "action": "replaced"
+    },
+    {
+      "path": "VastApps/resources/sfx/converted/48610__nirmatara__click2-short.wav",
+      "old_sha256": "08f50786401c23354e7bafbc5cbf59cd3c8f71bf880dd1f3f232c79df87dc17f",
+      "old_bytes": 2586,
+      "action": "removed",
+      "reason": "Deleted at the owner's direction on 2026-10-14; no separate permission established. Sixteen former callers now use the unchanged project blop_002.wav sound effect."
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/ambientObscurance.fsh",
+      "old_sha256": "347f1f38e62f70a064869307e932f27a1045f29597c2dbd597ea786fe498aea0",
+      "old_bytes": 5191,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/filterShadow.fsh",
+      "old_sha256": "aec123a297dc57e37fb778140cb7117f230198ba9d196d3f9fe8a8abe00cc981",
+      "old_bytes": 4545,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/galaxy.fsh",
+      "old_sha256": "1d0073e2dbeb41b0671d9f6c141bc01c561f6b5174af11ddd3367519ec4a5d0b",
+      "old_bytes": 3763,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/postBlur.fsh",
+      "old_sha256": "60e831eb768a251d82efe81cc34d8ccee0761172c5135b2dd15bc7cccc7e541a",
+      "old_bytes": 3565,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/HemisphereSSAO.fsh",
+      "old_sha256": "7d383a0f0dba82892f536a8d4507eec528c9d046f8fb5fcf756a0f88eda992c9",
+      "old_bytes": 3688,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/HemisphereSSAO.vsh",
+      "old_sha256": "1b310ceaa33830a636b71e3d77092ef8d25ddfe8fe2e3fa7f9fc8ea0bbb6c1d7",
+      "old_bytes": 596,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/SSAO.fsh",
+      "old_sha256": "3333e4eef31d5b423209f8d5a3f8a6364d6466ec90e5ee89dbda4c28086d7502",
+      "old_bytes": 3696,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/SSAO.vsh",
+      "old_sha256": "d1aaa3b14e00f845f06ef763aa14a74bd34ac3f3a8a6e87a38802b076015be2c",
+      "old_bytes": 574,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/color.fsh",
+      "old_sha256": "188d6747e50ef2639e1e403c35adb72091c2cda43649f0b2f93c1c8fb6530176",
+      "old_bytes": 1317,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/color.vsh",
+      "old_sha256": "d964443ca28f77250e36351a418138f0df64e7b23894df785944e5775d54e8c5",
+      "old_bytes": 1246,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/colorTex0.fsh",
+      "old_sha256": "a82ba51944564246d627d97f0e3a3a627c621d42955082467a03beb3d91af720",
+      "old_bytes": 1672,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/globalShadow.fsh",
+      "old_sha256": "d8abf0bbbcdbd868144992c7dc4cc15bcc31e5de734647906b365b9c084628e3",
+      "old_bytes": 3704,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/globalShadow.vsh",
+      "old_sha256": "fa0d15f4267abc7ae87d8c0edb4046e5ed7c9b243286dae1effb6702f0784b16",
+      "old_bytes": 1019,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/kernalSSAO.fsh",
+      "old_sha256": "6553aaa8905225769925c721c5db504cd06b2a91403091d3d0197eabac1533bb",
+      "old_bytes": 3152,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/kernalSSAO.vsh",
+      "old_sha256": "6ce2112d5664ac691f22706e2e059bf80032428aa3e60d137b3700ba199207f9",
+      "old_bytes": 470,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/mediumAO.fsh",
+      "old_sha256": "c6d20457a8ef3be670b21d735dc2ab29a65288c3723dc50ef6197b8eef0c4e38",
+      "old_bytes": 3452,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/mediumAO.vsh",
+      "old_sha256": "c56b551ea7b9fc97b798550e65db4fde936aeee3d91f6f4e3b4b5b2b2127b675",
+      "old_bytes": 290,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/mrt.fsh",
+      "old_sha256": "2835db8ca32273dcb12924d7348bf498373d065c316ed2ec4f5819f92973f1f0",
+      "old_bytes": 1038,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/outline.fsh",
+      "old_sha256": "1577a6cdb8df8a0723e03c91fbf3dc5cf4b98f09cec7895c0a2f661215d76bb8",
+      "old_bytes": 877,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/postSSAO.fsh",
+      "old_sha256": "ab65db030b4faa47c18d3cbd4a74e5a26106c405c215823bf8faa71f0fc4de15",
+      "old_bytes": 4151,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/retired/postSSAO.vsh",
+      "old_sha256": "dbe6add9dca36637af6144cbf33d944778dcad77d0f50474dc140de03e38812b",
+      "old_bytes": 476,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/ssao.fsh",
+      "old_sha256": "6a8a6ee3b5c5af843a97bcc45904bce9624a7d0f5ef05b37a88ef79d6c37d6ad",
+      "old_bytes": 4034,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/ssao.vsh",
+      "old_sha256": "60e3dd1e9a35cf0f541258998983b01828e72e656740b7bee16d17097c4ecc33",
+      "old_bytes": 304,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl/work.fsh",
+      "old_sha256": "fc747008f0d7498f87d0d8db1ccaba87a042b621cd9d0817025918c647ee1401",
+      "old_bytes": 2012,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/ambientObscurance.frag",
+      "old_sha256": "ec1d5ef50aaef5a1e1e4c4c0e537a5d49f6fad3ddb4980661c2c8e637ca31571",
+      "old_bytes": 5469,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongGeometry.frag",
+      "old_sha256": "7c220555ee3ed821fd9644683af437a0f9deae047af1f10b684293e170bb17cb",
+      "old_bytes": 1555,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/blinnPhongTexture.frag",
+      "old_sha256": "713c7e9fdf57336f4ee91a04d0fbc15bfdd38816e7561147a5be4e320eed7fbf",
+      "old_bytes": 1450,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/filterShadow.frag",
+      "old_sha256": "dbf66c0f2a6e04eb1beec42ad86900cfcbddd928002c2c631baff8a280c632d7",
+      "old_bytes": 5828,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/galaxy.frag",
+      "old_sha256": "1d0073e2dbeb41b0671d9f6c141bc01c561f6b5174af11ddd3367519ec4a5d0b",
+      "old_bytes": 3763,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/huePicker.frag",
+      "old_sha256": "caa4e160c21df7d663d9ccef877cdf48f78b9ee12492015dbc3a99bf41807433",
+      "old_bytes": 717,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/postBlur.frag",
+      "old_sha256": "c4d6337235b084b9115a4689353735e956cf07b9992fcfd4e9a7ceffd00d7e96",
+      "old_bytes": 3752,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/shadowMapToEye.frag",
+      "old_sha256": "2507878f897ef042855934703780e32afc45dceee8fe8af86fbdb61e4ce97dd1",
+      "old_bytes": 3926,
+      "action": "modified"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/ssao.frag",
+      "old_sha256": "6a8a6ee3b5c5af843a97bcc45904bce9624a7d0f5ef05b37a88ef79d6c37d6ad",
+      "old_bytes": 4034,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/ssao.vert",
+      "old_sha256": "2e4def7784efbc002ab970696597250cc9bd4e40ee6bd1e1db2b9a0b36b266c4",
+      "old_bytes": 268,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/shaders/gl3/work.frag",
+      "old_sha256": "fc747008f0d7498f87d0d8db1ccaba87a042b621cd9d0817025918c647ee1401",
+      "old_bytes": 2012,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/sibenik/sibenik.obj.json",
+      "old_sha256": "36e06875e4e667ac2fe55a81a9b20469d8775baebc9ceb506e416524c38312fb",
+      "old_bytes": 17916535,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/teapot/teapot.json",
+      "old_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "old_bytes": 0,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/teapot/teapot.obj.json",
+      "old_sha256": "099d9fc66b44c301ce22f87a00d0ae3173a914e38fbd6513740459c9a89e99d3",
+      "old_bytes": 4915092,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/models/untitled.obj.json",
+      "old_sha256": "8d9baa63fd56ccd4e855c3afe13e311b8b1b7fc4de82ee583ee9393b19b5e065",
+      "old_bytes": 7056150,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/War-and-Peace-w001.jpg",
+      "old_sha256": "9252288be1a98c6924884d56806d7865f271449e23588ef1741e49473473da52",
+      "old_bytes": 203581,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/stone_texture_10___seamless_by_agf81-d49w3l3.jpg",
+      "old_sha256": "3c57d4aa74c062c8450c63b776642d6182296d20cb97e72580f9982dbf0666b9",
+      "old_bytes": 237813,
+      "action": "removed"
+    },
+    {
+      "path": "VastApps/resources/images/stone_texture_10___seamless_by_agf81-d49w3l3.png",
+      "old_sha256": "4d57ee00efb444d0a52153d86cabe2c38106f64c408538824159ee3c8b658fbd",
+      "old_bytes": 2447646,
+      "action": "removed"
+    }
+  ],
+  "recording_license_date": "2026-10-17"
+}

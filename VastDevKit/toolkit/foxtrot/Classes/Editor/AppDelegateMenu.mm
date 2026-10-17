@@ -1,0 +1,177 @@
+//
+//  MainMenuDelegate.m
+//  Sierra
+//
+//  Created by David Petrie on 1/05/10.
+//  Copyright 2010 n/a. All rights reserved.
+//
+
+#import "AppDelegateMenu.h"
+#import "hdk.h"
+#import "LevelEditor.h"
+
+@implementation AppDelegate (MainMenuCategory)
+
+
+- (void)fileSystemError:(NSString *)reason withFileName:(NSString *)fileName
+{
+	NSWindow *infoWindow;
+	
+	infoWindow = NSGetCriticalAlertPanel(reason,
+										 [NSString stringWithFormat:@"File: %@", fileName],
+										 @"OK", nil, nil );
+	[NSApp runModalForWindow:infoWindow];
+	[infoWindow close];
+}
+
+
+- (void)otherError:(NSString *)reason
+{
+	NSWindow *infoWindow;
+	
+	infoWindow = NSGetCriticalAlertPanel(reason, @"",
+										 @"OK", nil, nil );
+	[NSApp runModalForWindow:infoWindow];
+	[infoWindow close];
+}
+
+
+- (IBAction)newWorld:(id)sender
+{
+	if (![LevelEditor sharedInstance]->NewWorld())
+	{
+		[self otherError:@"Could not create new world."];
+		return;
+	}
+	[[NSNotificationCenter defaultCenter] 
+	 postNotificationName:kWorldWasLoadedNotification
+	 object:nil];
+}
+
+
+- (IBAction)openNewWorld:(id)sender
+{
+	NSOpenPanel *open = [NSOpenPanel openPanel];
+    
+    NSURL * fileURL = [NSURL fileURLWithPath:[NSString stringWithUTF8String:FileSystem_BaseDir()]];
+    if ([ExternalSettings GetLastLoadedFilePath])
+    {
+         fileURL = [NSURL fileURLWithPath:[[ExternalSettings GetLastLoadedFilePath] stringByDeletingLastPathComponent]];
+    }
+    
+	NSString *worldExtension = [NSString stringWithUTF8String:TOTEM_WORLD_TEXTFILE_EXTENSION];
+	
+	hdPrintf("Opening folder: %s\n", [[fileURL absoluteString] UTF8String]);
+	[open setDirectoryURL:fileURL];
+	[open setAllowedFileTypes:[NSArray arrayWithObject:@"hdw"]];
+	[open setCanChooseDirectories:NO]; 
+	[open setCanChooseFiles:YES]; 
+	[open setCanCreateDirectories:NO]; 
+	[open setAllowsMultipleSelection:NO];
+	[open setAlphaValue:0.95]; 
+	[open setTitle:@"Select a world file"];
+	
+	//if ([open runModalForDirectory:[NSString stringWithUTF8String:FileSystem_BaseDir()] file:nil])
+	if ([open runModal])
+	{
+		NSArray *urls = [open URLs];
+		if (urls.count == 1)
+		{
+			NSString *fileName = [[urls objectAtIndex:0] lastPathComponent];
+			if ([fileName hasSuffix:worldExtension])
+			{
+				NSString *p = [[urls objectAtIndex:0] path];
+				if (![LevelEditor sharedInstance]->LoadWorld([p UTF8String]))
+				{
+					[self fileSystemError:@"Could not load the specified totem world file." withFileName:fileName];
+					return;
+				}
+				[ExternalSettings SetLastLoadedFilePath:p];
+			} 
+			else
+			{
+				[self fileSystemError:@"The specifed file was not a totem world file." withFileName:fileName];
+				return;
+			}
+			[[NSNotificationCenter defaultCenter] 
+			 postNotificationName:kWorldWasLoadedNotification
+			 object:nil];
+		}
+	}
+}
+
+
+- (IBAction)save:(id)sender
+{
+	[self showProgressPanel:@"Saving world..."];
+	if (![LevelEditor sharedInstance]->SaveCurrentWorld())
+	{
+		[self fileSystemError:@"Could not save the current totem world file" withFileName:@"Current file"];
+	}
+	[self hideProgressPanel];
+}
+
+
+- (IBAction)saveAs:(id)sender
+{
+	// Need to open a file picker
+	NSSavePanel *savePanel = [NSSavePanel savePanel];
+	NSURL *fileURL = 
+		[NSURL fileURLWithPath:[NSString stringWithUTF8String:FileSystem_BaseDir()]];
+	NSString *worldExtension = [NSString stringWithUTF8String:TOTEM_WORLD_TEXTFILE_EXTENSION];
+	
+	hdPrintf("Saving file\n");
+	[savePanel setDirectoryURL:fileURL];
+	[savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"hdw"]];
+	[savePanel setCanCreateDirectories:YES];
+	[savePanel setTitle:@"Save current world file"];
+	
+	if ([savePanel runModal])
+	{
+		if ([savePanel URL])
+		{
+			NSString *fileName = [[savePanel URL] lastPathComponent];
+			// can't save a file that already exists
+			if (FileSystem_FileExists([[[savePanel URL] path] UTF8String]))
+			{
+				[self fileSystemError:@"Can't save over file that already exists." withFileName:fileName];
+				return;
+			}
+			else if (![fileName hasSuffix:worldExtension])
+			{
+				[self fileSystemError:@"The specifed file was not a ttw file." withFileName:fileName];
+				return;
+			} 
+			else
+			{
+				NSString *p = [[savePanel URL] path];
+				if ((![LevelEditor sharedInstance]->SaveCurrentWorldTo([p UTF8String])))
+				{
+					[self fileSystemError:@"Could not save the specified totem world file." withFileName:fileName];
+					return;
+				}
+			}
+		}		
+	}
+}
+
+
+- (IBAction)clearTexturePaths:(id)sender
+{
+	[ExternalSettings ClearTexturePaths];
+}
+
+
+- (IBAction)physicsOn:(id)sender
+{
+	[LevelEditor sharedInstance]->PhysicsOn();
+}
+
+
+- (IBAction)physicsOff:(id)sender
+{
+	[LevelEditor sharedInstance]->PhysicsOff();
+}
+
+
+@end

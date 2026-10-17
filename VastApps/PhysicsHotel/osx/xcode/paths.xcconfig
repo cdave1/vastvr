@@ -1,0 +1,5 @@
+#include "local.xcconfig"
+#include "../../game/version.txt"
+
+// Add to target preprocessor defs as $(inherited)
+GCC_PREPROCESSOR_DEFINITIONS = MINOR_VERSION=$MINOR_VERSION MAJOR_VERSION=$MAJOR_VERSION DISTRIBUTION_VERSION=$DISTRIBUTION_VERSION _NOMEMORYMANAGER=1 VFP_NO_THUMB

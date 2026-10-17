@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'test' target in the 'test' project
+//
+
+#import <Availability.h>
+#import <TargetConditionals.h>
+#include "Core/Common/Common.h"
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2702B4D9183DA27000FF223E /* test_a.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2702B4D8183DA27000FF223E /* test_a.mm */; };
+		2702B4DF183DB71300FF223E /* libhdk.ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CDE89F183302230031A27A /* libhdk.ios.a */; };
+		2702B4E9183DF29F00FF223E /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2702B4E8183DF29F00FF223E /* CoreMIDI.framework */; };
+		27CDE8AA183307760031A27A /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CDE8A6183307760031A27A /* ViewController_iPad.xib */; };
+		27CDE8AB183307760031A27A /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CDE8A8183307760031A27A /* ViewController_iPhone.xib */; };
+		5544DD001832ECDD00E405C9 /* BlockInputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCED1832ECDD00E405C9 /* BlockInputSystem.cpp */; };
+		5544DD011832ECDD00E405C9 /* BlockMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCEF1832ECDD00E405C9 /* BlockMover.cpp */; };
+		5544DD021832ECDD00E405C9 /* BlockRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCF11832ECDD00E405C9 /* BlockRenderer.cpp */; };
+		5544DD031832ECDD00E405C9 /* CameraInputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCF31832ECDD00E405C9 /* CameraInputSystem.cpp */; };
+		5544DD041832ECDD00E405C9 /* Cameras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCF51832ECDD00E405C9 /* Cameras.cpp */; };
+		5544DD051832ECDD00E405C9 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCF71832ECDD00E405C9 /* Game.cpp */; };
+		5544DD061832ECDD00E405C9 /* HudRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCF91832ECDD00E405C9 /* HudRenderer.cpp */; };
+		5544DD071832ECDD00E405C9 /* MenuController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCFB1832ECDD00E405C9 /* MenuController.cpp */; };
+		5544DD081832ECDD00E405C9 /* UiInputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DCFD1832ECDD00E405C9 /* UiInputSystem.cpp */; };
+		5544DD091832ECDD00E405C9 /* version.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5544DCFF1832ECDD00E405C9 /* version.txt */; };
+		5544DD111832ECE900E405C9 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5544DD0C1832ECE900E405C9 /* AppDelegate.mm */; };
+		5544DD121832ECE900E405C9 /* Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5544DD0D1832ECE900E405C9 /* Client.cpp */; };
+		5544DD131832ECE900E405C9 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5544DD0E1832ECE900E405C9 /* main.mm */; };
+		5544DD141832ECE900E405C9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5544DD101832ECE900E405C9 /* ViewController.mm */; };
+		55CECF7F182B2E9500672851 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF7E182B2E9500672851 /* CoreImage.framework */; };
+		55CECF81182B2E9B00672851 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF80182B2E9B00672851 /* CoreMotion.framework */; };
+		55CECF83182B2EA600672851 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF82182B2EA600672851 /* CoreFoundation.framework */; };
+		55CECF8E182B2ED200672851 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF84182B2ED200672851 /* CoreAudio.framework */; };
+		55CECF8F182B2ED200672851 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF85182B2ED200672851 /* CoreGraphics.framework */; };
+		55CECF90182B2ED200672851 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF86182B2ED200672851 /* CoreMedia.framework */; };
+		55CECF91182B2ED200672851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF87182B2ED200672851 /* Foundation.framework */; };
+		55CECF92182B2ED200672851 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF88182B2ED200672851 /* GLKit.framework */; };
+		55CECF93182B2ED200672851 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF89182B2ED200672851 /* OpenAL.framework */; };
+		55CECF94182B2ED200672851 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF8A182B2ED200672851 /* OpenGLES.framework */; };
+		55CECF95182B2ED200672851 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF8B182B2ED200672851 /* QuartzCore.framework */; };
+		55CECF96182B2ED200672851 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF8C182B2ED200672851 /* SystemConfiguration.framework */; };
+		55CECF97182B2ED200672851 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CECF8D182B2ED200672851 /* UIKit.framework */; };
+		6311FEA8171BFD8700E4CA4D /* BaseInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6311FEA6171BFD8600E4CA4D /* BaseInfo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2702B4DD183DB70F00FF223E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27CDE89A183302220031A27A /* hdk.ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63357C5D1602A698007FF2CE;
+			remoteInfo = hdk.ios;
+		};
+		27CDE89E183302230031A27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27CDE89A183302220031A27A /* hdk.ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63357C5E1602A698007FF2CE;
+			remoteInfo = hdk.ios;
+		};
+		5599391D1832ED6D000819D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559939191832ED6D000819D6 /* hdk.ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 63357C5E1602A698007FF2CE;
+			remoteInfo = hdk.ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2702B4D7183DA27000FF223E /* test_a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_a.h; sourceTree = "<group>"; };
+		2702B4D8183DA27000FF223E /* test_a.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = test_a.mm; sourceTree = "<group>"; };
+		2702B4E8183DF29F00FF223E /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		27CDE89A183302220031A27A /* hdk.ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = hdk.ios.xcodeproj; path = ../../../../hdTech1.6/hdk/build/xcode/hdk.ios.xcodeproj; sourceTree = "<group>"; };
+		27CDE8A7183307760031A27A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController_iPad.xib; sourceTree = "<group>"; };
+		27CDE8A9183307760031A27A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
+		5544DCED1832ECDD00E405C9 /* BlockInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockInputSystem.cpp; sourceTree = "<group>"; };
+		5544DCEE1832ECDD00E405C9 /* BlockInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockInputSystem.h; sourceTree = "<group>"; };
+		5544DCEF1832ECDD00E405C9 /* BlockMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockMover.cpp; sourceTree = "<group>"; };
+		5544DCF01832ECDD00E405C9 /* BlockMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockMover.h; sourceTree = "<group>"; };
+		5544DCF11832ECDD00E405C9 /* BlockRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlockRenderer.cpp; sourceTree = "<group>"; };
+		5544DCF21832ECDD00E405C9 /* BlockRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockRenderer.h; sourceTree = "<group>"; };
+		5544DCF31832ECDD00E405C9 /* CameraInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraInputSystem.cpp; sourceTree = "<group>"; };
+		5544DCF41832ECDD00E405C9 /* CameraInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraInputSystem.h; sourceTree = "<group>"; };
+		5544DCF51832ECDD00E405C9 /* Cameras.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cameras.cpp; sourceTree = "<group>"; };
+		5544DCF61832ECDD00E405C9 /* Cameras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cameras.h; sourceTree = "<group>"; };
+		5544DCF71832ECDD00E405C9 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		5544DCF81832ECDD00E405C9 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		5544DCF91832ECDD00E405C9 /* HudRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HudRenderer.cpp; sourceTree = "<group>"; };
+		5544DCFA1832ECDD00E405C9 /* HudRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudRenderer.h; sourceTree = "<group>"; };
+		5544DCFB1832ECDD00E405C9 /* MenuController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuController.cpp; sourceTree = "<group>"; };
+		5544DCFC1832ECDD00E405C9 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		5544DCFD1832ECDD00E405C9 /* UiInputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiInputSystem.cpp; sourceTree = "<group>"; };
+		5544DCFE1832ECDD00E405C9 /* UiInputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiInputSystem.h; sourceTree = "<group>"; };
+		5544DCFF1832ECDD00E405C9 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		5544DD0B1832ECE900E405C9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5544DD0C1832ECE900E405C9 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		5544DD0D1832ECE900E405C9 /* Client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Client.cpp; sourceTree = "<group>"; };
+		5544DD0E1832ECE900E405C9 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		5544DD0F1832ECE900E405C9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5544DD101832ECE900E405C9 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		559939191832ED6D000819D6 /* hdk.ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = hdk.ios.xcodeproj; path = ../../../../../hdk/hdTech1.6/hdk/build/xcode/hdk.ios.xcodeproj; sourceTree = "<group>"; };
+		55CECF7E182B2E9500672851 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		55CECF80182B2E9B00672851 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		55CECF82182B2EA600672851 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		55CECF84182B2ED200672851 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		55CECF85182B2ED200672851 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55CECF86182B2ED200672851 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		55CECF87182B2ED200672851 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55CECF88182B2ED200672851 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		55CECF89182B2ED200672851 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		55CECF8A182B2ED200672851 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		55CECF8B182B2ED200672851 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55CECF8C182B2ED200672851 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		55CECF8D182B2ED200672851 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55CECF98182B2ED900672851 /* libhdk.ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhdk.ios.a; path = "../../../../../Library/Developer/Xcode/DerivedData/PhysicsHotel.iOS-cagecqecglralmbjejycyidxjjgx/Build/Products/Debug-iphoneos/libhdk.ios.a"; sourceTree = "<group>"; };
+		6311FB26171BEF3200E4CA4D /* PhysicsHotel.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsHotel.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6311FEA4171BFD2000E4CA4D /* paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = paths.xcconfig; sourceTree = "<group>"; };
+		6311FEA6171BFD8600E4CA4D /* BaseInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BaseInfo.plist; sourceTree = "<group>"; };
+		6311FEA7171BFD8700E4CA4D /* BasePrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePrefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6311FB23171BEF3200E4CA4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2702B4E9183DF29F00FF223E /* CoreMIDI.framework in Frameworks */,
+				55CECF8E182B2ED200672851 /* CoreAudio.framework in Frameworks */,
+				55CECF8F182B2ED200672851 /* CoreGraphics.framework in Frameworks */,
+				55CECF90182B2ED200672851 /* CoreMedia.framework in Frameworks */,
+				55CECF91182B2ED200672851 /* Foundation.framework in Frameworks */,
+				55CECF92182B2ED200672851 /* GLKit.framework in Frameworks */,
+				55CECF93182B2ED200672851 /* OpenAL.framework in Frameworks */,
+				55CECF94182B2ED200672851 /* OpenGLES.framework in Frameworks */,
+				55CECF95182B2ED200672851 /* QuartzCore.framework in Frameworks */,
+				55CECF96182B2ED200672851 /* SystemConfiguration.framework in Frameworks */,
+				55CECF97182B2ED200672851 /* UIKit.framework in Frameworks */,
+				55CECF83182B2EA600672851 /* CoreFoundation.framework in Frameworks */,
+				55CECF81182B2E9B00672851 /* CoreMotion.framework in Frameworks */,
+				55CECF7F182B2E9500672851 /* CoreImage.framework in Frameworks */,
+				2702B4DF183DB71300FF223E /* libhdk.ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27CDE89B183302220031A27A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27CDE89F183302230031A27A /* libhdk.ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27CDE8A5183307760031A27A /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				27CDE8A6183307760031A27A /* ViewController_iPad.xib */,
+				27CDE8A8183307760031A27A /* ViewController_iPhone.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		5544DCEC1832ECDD00E405C9 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				5544DCED1832ECDD00E405C9 /* BlockInputSystem.cpp */,
+				5544DCEE1832ECDD00E405C9 /* BlockInputSystem.h */,
+				5544DCEF1832ECDD00E405C9 /* BlockMover.cpp */,
+				5544DCF01832ECDD00E405C9 /* BlockMover.h */,
+				5544DCF11832ECDD00E405C9 /* BlockRenderer.cpp */,
+				5544DCF21832ECDD00E405C9 /* BlockRenderer.h */,
+				5544DCF31832ECDD00E405C9 /* CameraInputSystem.cpp */,
+				5544DCF41832ECDD00E405C9 /* CameraInputSystem.h */,
+				5544DCF51832ECDD00E405C9 /* Cameras.cpp */,
+				5544DCF61832ECDD00E405C9 /* Cameras.h */,
+				5544DCF71832ECDD00E405C9 /* Game.cpp */,
+				5544DCF81832ECDD00E405C9 /* Game.h */,
+				5544DCF91832ECDD00E405C9 /* HudRenderer.cpp */,
+				5544DCFA1832ECDD00E405C9 /* HudRenderer.h */,
+				5544DCFB1832ECDD00E405C9 /* MenuController.cpp */,
+				5544DCFC1832ECDD00E405C9 /* MenuController.h */,
+				5544DCFD1832ECDD00E405C9 /* UiInputSystem.cpp */,
+				5544DCFE1832ECDD00E405C9 /* UiInputSystem.h */,
+				5544DCFF1832ECDD00E405C9 /* version.txt */,
+				2702B4D7183DA27000FF223E /* test_a.h */,
+				2702B4D8183DA27000FF223E /* test_a.mm */,
+			);
+			name = game;
+			path = ../../game;
+			sourceTree = "<group>";
+		};
+		5544DD0A1832ECE900E405C9 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				5544DD0B1832ECE900E405C9 /* AppDelegate.h */,
+				5544DD0C1832ECE900E405C9 /* AppDelegate.mm */,
+				5544DD0D1832ECE900E405C9 /* Client.cpp */,
+				5544DD0E1832ECE900E405C9 /* main.mm */,
+				5544DD0F1832ECE900E405C9 /* ViewController.h */,
+				5544DD101832ECE900E405C9 /* ViewController.mm */,
+			);
+			name = ios;
+			path = ../../ios;
+			sourceTree = "<group>";
+		};
+		559939181832ED57000819D6 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				559939191832ED6D000819D6 /* hdk.ios.xcodeproj */,
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		5599391A1832ED6D000819D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5599391E1832ED6D000819D6 /* libhdk.ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6311FB1B171BEF3200E4CA4D = {
+			isa = PBXGroup;
+			children = (
+				27CDE8A5183307760031A27A /* en.lproj */,
+				6311FEA6171BFD8600E4CA4D /* BaseInfo.plist */,
+				6311FEA7171BFD8700E4CA4D /* BasePrefix.pch */,
+				559939181832ED57000819D6 /* dependencies */,
+				6311FB29171BEF3300E4CA4D /* Frameworks */,
+				5544DCEC1832ECDD00E405C9 /* game */,
+				5544DD0A1832ECE900E405C9 /* ios */,
+				6311FEA4171BFD2000E4CA4D /* paths.xcconfig */,
+				6311FB27171BEF3200E4CA4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6311FB27171BEF3200E4CA4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6311FB26171BEF3200E4CA4D /* PhysicsHotel.iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6311FB29171BEF3300E4CA4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55CECF98182B2ED900672851 /* libhdk.ios.a */,
+				27CDE89A183302220031A27A /* hdk.ios.xcodeproj */,
+				2702B4E8183DF29F00FF223E /* CoreMIDI.framework */,
+				55CECF84182B2ED200672851 /* CoreAudio.framework */,
+				55CECF85182B2ED200672851 /* CoreGraphics.framework */,
+				55CECF86182B2ED200672851 /* CoreMedia.framework */,
+				55CECF87182B2ED200672851 /* Foundation.framework */,
+				55CECF88182B2ED200672851 /* GLKit.framework */,
+				55CECF89182B2ED200672851 /* OpenAL.framework */,
+				55CECF8A182B2ED200672851 /* OpenGLES.framework */,
+				55CECF8B182B2ED200672851 /* QuartzCore.framework */,
+				55CECF8C182B2ED200672851 /* SystemConfiguration.framework */,
+				55CECF8D182B2ED200672851 /* UIKit.framework */,
+				55CECF82182B2EA600672851 /* CoreFoundation.framework */,
+				55CECF80182B2E9B00672851 /* CoreMotion.framework */,
+				55CECF7E182B2E9500672851 /* CoreImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6311FB25171BEF3200E4CA4D /* PhysicsHotel.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6311FB4F171BEF3300E4CA4D /* Build configuration list for PBXNativeTarget "PhysicsHotel.iOS" */;
+			buildPhases = (
+				6311FB22171BEF3200E4CA4D /* Sources */,
+				6311FB23171BEF3200E4CA4D /* Frameworks */,
+				6311FB24171BEF3200E4CA4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2702B4DE183DB70F00FF223E /* PBXTargetDependency */,
+			);
+			name = PhysicsHotel.iOS;
+			productName = test;
+			productReference = 6311FB26171BEF3200E4CA4D /* PhysicsHotel.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6311FB1D171BEF3200E4CA4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "David Petrie";
+			};
+			buildConfigurationList = 6311FB20171BEF3200E4CA4D /* Build configuration list for PBXProject "PhysicsHotel.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6311FB1B171BEF3200E4CA4D;
+			productRefGroup = 6311FB27171BEF3200E4CA4D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27CDE89B183302220031A27A /* Products */;
+					ProjectRef = 27CDE89A183302220031A27A /* hdk.ios.xcodeproj */;
+				},
+				{
+					ProductGroup = 5599391A1832ED6D000819D6 /* Products */;
+					ProjectRef = 559939191832ED6D000819D6 /* hdk.ios.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6311FB25171BEF3200E4CA4D /* PhysicsHotel.iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27CDE89F183302230031A27A /* libhdk.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libhdk.ios.a;
+			remoteRef = 27CDE89E183302230031A27A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5599391E1832ED6D000819D6 /* libhdk.ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libhdk.ios.a;
+			remoteRef = 5599391D1832ED6D000819D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6311FB24171BEF3200E4CA4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27CDE8AA183307760031A27A /* ViewController_iPad.xib in Resources */,
+				6311FEA8171BFD8700E4CA4D /* BaseInfo.plist in Resources */,
+				5544DD091832ECDD00E405C9 /* version.txt in Resources */,
+				27CDE8AB183307760031A27A /* ViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6311FB22171BEF3200E4CA4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5544DD131832ECE900E405C9 /* main.mm in Sources */,
+				2702B4D9183DA27000FF223E /* test_a.mm in Sources */,
+				5544DD081832ECDD00E405C9 /* UiInputSystem.cpp in Sources */,
+				5544DD001832ECDD00E405C9 /* BlockInputSystem.cpp in Sources */,
+				5544DD011832ECDD00E405C9 /* BlockMover.cpp in Sources */,
+				5544DD021832ECDD00E405C9 /* BlockRenderer.cpp in Sources */,
+				5544DD031832ECDD00E405C9 /* CameraInputSystem.cpp in Sources */,
+				5544DD041832ECDD00E405C9 /* Cameras.cpp in Sources */,
+				5544DD071832ECDD00E405C9 /* MenuController.cpp in Sources */,
+				5544DD061832ECDD00E405C9 /* HudRenderer.cpp in Sources */,
+				5544DD121832ECE900E405C9 /* Client.cpp in Sources */,
+				5544DD111832ECE900E405C9 /* AppDelegate.mm in Sources */,
+				5544DD051832ECDD00E405C9 /* Game.cpp in Sources */,
+				5544DD141832ECE900E405C9 /* ViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2702B4DE183DB70F00FF223E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hdk.ios;
+			targetProxy = 2702B4DD183DB70F00FF223E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27CDE8A6183307760031A27A /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CDE8A7183307760031A27A /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		27CDE8A8183307760031A27A /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27CDE8A9183307760031A27A /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6311FB4D171BEF3300E4CA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6311FEA4171BFD2000E4CA4D /* paths.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = BasePrefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BaseInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "$(OTHER_CFLAGS)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		6311FB4E171BEF3300E4CA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6311FEA4171BFD2000E4CA4D /* paths.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PREFIX_HEADER = BasePrefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = BaseInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		6311FB50171BEF3300E4CA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6311FEA4171BFD2000E4CA4D /* paths.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = PhysicsHotel.iOS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6311FB51171BEF3300E4CA4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6311FEA4171BFD2000E4CA4D /* paths.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = PhysicsHotel.iOS;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6311FB20171BEF3200E4CA4D /* Build configuration list for PBXProject "PhysicsHotel.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6311FB4D171BEF3300E4CA4D /* Debug */,
+				6311FB4E171BEF3300E4CA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6311FB4F171BEF3300E4CA4D /* Build configuration list for PBXNativeTarget "PhysicsHotel.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6311FB50171BEF3300E4CA4D /* Debug */,
+				6311FB51171BEF3300E4CA4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6311FB1D171BEF3200E4CA4D /* Project object */;
+}

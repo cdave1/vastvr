@@ -1,0 +1,111 @@
+hdTech1.6 will be just a slight improvement on 1.5.
+
+The following changes/additions/improvements are to be made:
+
+
+- hdGame changes:
+	- Remove unused classes:
+		- hd2DGameController
+		- hdAgent
+		- hdBody
+		- hdLevelGroup
+	- Move b2Opt to an OS specific location
+	- Replace hdGameObject and hdGameWorld with hdNode/hdNodeContext
+	- Remove the stupid recursive references -- hdNode does not need to know its parent context.
+	- Take out hdOrthographicProjection (more in next section).
+	- Remove all traces of OBB and replace with better concepts (still need to store rot angle).
+
+- Behaviors:
+	- New folder and include files for the different node behaviors.
+	- Put all behavior abstract classes here, particularly physics stuff, drawable, etc
+	- New camera controller behavior.
+
+- Graphics Library:
+	- Allow multi-threaded GL calls so we can loaded textures while an intro is playing.
+	- Fix hdTexture so it's nicer.
+	- Put iOS specific surfaces in own folder.
+	- Cameras:
+		- New 2D and 3D cameras, responsible for setting up projections and handling
+		  Camera movement.  Might implement as behaviors.
+	- Textures:
+		- Allow any width/height textures to be loaded.
+		- Completely redo the default texture loader.
+		- Allow texture downsizing to be configurable, so we can ship with the same textures, but
+		  downsize them on the app while they load.
+	- No more TGAs.  We either load compressed RAW sprite sheets, or use PNGs.
+	- Make the mesh relationship more explicit.  All objects are meshes, with a transform.
+
+- Math libs:
+	- All typedef structs must be in the same header file (e.g hdAABB).
+
+- Configuration changes:
+	- hdConfig must be used for all system settings.
+	- No more #defines for config vars.
+	- Default config files are loaded on startup.
+	- System info is imported at startup.
+	- Configs are separate to player settings.  A config is more of a readonly setup.
+	- Have a cvar_t type struct for getting config vals.  Thinking hdVar * might be a good idea.
+	- Some files with #defines that should be replaced:
+		- HD_CYLINDER_SEGMENT_COUNT in hd2DBlock.h
+		- hd2DEnums.h
+		- hd2DLevelController.h
+		- etc
+	- Remove SystemSettings.
+	- Decide on whether to implement this as a set of static functions, or static functions on
+	  hdConfig.  Style choice.
+	- OS specific startup files (e.g. Delegate.h on iOS) are responsible for setting config values. The
+	  Internal hdk should no longer know anything about the system it is running on.
+
+- hd2DGame:
+	- Init() functions are completely fucked.
+		- No good reason for a lot of the stuff there (e.g. InitGameObjects and InitPhysicsObjects -- why two??).
+		- The entire application initialization strategy needs to be completely re-thought.
+	- hd2DWorld:
+		- Use hdCollections for level storage.
+	- hd2DLevel:
+		- Remove hd2DLayer.
+		- Levels have config settings, a name value pair text area.
+		- The level editor can be used to edit the config settings.
+		- Clean the fuck out of the class.  Rebuild from scratch, with the following goals
+			- Rendering in 2D and 3D modes.
+			- Extrusion caching.
+			- Extract, somehow, reflection, so it can be done outside.
+		- When a level is being loaded, do NOT load any textures by default.  Textures need to be explicitly loaded
+		  at run time.  However, provide a precaching function too, in case we do actually need to precache the textures.
+	- hd2DBlock:
+		- Can have config settings, instead of tags.
+		- Have a 2D and 3D render path.
+
+- Materials database:
+	- Implement this as a loadable file, like textures or fonts.
+	- Each level is associated with zero or more material files.
+	- Remove the hardcoded material setup.
+
+- Camera:
+	- Remove hdOrthographicProjection and replace with the Camera Controller concept
+	- Rename hdUIController to hdUICameraController so we know what it does. Clean this class up and remove the
+	  old fixed size bullshit.
+
+- UI Changes:
+	- No more static function pointer callbacks.  Implement a string based system based on notifications.
+	- Replace hdUIFontPolygon with the FTGLES based fonts
+	- Implement these fonts in Tango.
+	- Introduce hdUINavigationController, retains a stack of hdUIViewControllers
+	  and is responsible for animating navigation between them.
+	- Introduce hdUIScrollController, responsible for allowing scroll through a
+	  hdUIViewController object.
+
+- Tango changes:
+	- Export to json.
+	- Add support for non ^2 textures.
+	- IBViewControllers can support multiple view controllers in the same file.
+
+- Application Structure:
+	- Delegate no longer responsible for calling UpdateInput/UpdateScene/Draw.
+	- Have a general system init function, rather than the ad-hoc crap that is in the Application.mm
+	  file.
+
+- Networking:
+	- Add c json lib.
+	- Rip quake 3 ftp file loader.
+	- Investigate asi-http.

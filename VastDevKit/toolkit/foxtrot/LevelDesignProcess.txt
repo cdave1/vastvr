@@ -1,0 +1,139 @@
+The Foxtrot Level Design Process
+
+
+The Problem: Level Design in the Hackdirt Corporation currently relies far too 
+much on hand-wavy creativity.  While this can result in some interesting work, 
+it simply takes far too long to build anything -- the company is running out
+of money.
+
+This process is designed to preserve as much creativity as possible, but adds
+some structure to allow us to produce the testable artifacts of our labour much
+more quickly.  The process is a work in progress, subject to change without
+notice.
+
+
+1. CONCEPT AND SKILL ATOMS
+
+Write down a sentence or two describing the concept of the level.  This 
+concept can be anything, but should involve either teaching the player a
+new gameplay mechanic (or atom) and/or testing their ability to utilise this
+gameplay mechanic.
+
+
+
+2. ROUGH SKETCHES AND MOCKUPS
+
+Spend five minutes drawing a very rough outline of the level on paper.  All
+that is required is for the designer to simply draw the least amount possible in 
+order to convey how the level space will implement the concept outlined in the
+first step of the process.
+
+
+
+3. BLOCKING. 
+
+Build the boundaries of the level.  This is a basic blocking process, where 
+positive space is defined as static objects.  At this point, the designer 
+should really only be concerned with getting SOMETHING down on the level 
+editor, fully expecting that none of the work done will appear in the 
+finished product.  1 hour max.
+
+
+
+4. DEVELOP A MINIMALLY COMPLETE LEVEL 
+
+The produce something that illustrates
+   the main gameplay concept goals.  Design quality and visual appearance is
+   not a goal at this point.  Rapid iteration is the key; the work outlined
+   here should not take any longer than a couple of hours.
+	a.	QUICK BUILD.  Quickly place some gameplay objects on the level, as many
+		as possible in 15 minutes.
+	b.	PLAY THROUGH.  The level designer builds the level and loads it 
+		in the game engine.  The goal is for the designer to use his or her
+		discretion to assess whether the level is ready for initial gameplay
+		testing.
+	c.	ASSESSMENT.  The level designer returns to step (a) if the level
+		requires further work.  Otherwise, they go to step (d).  It is 
+		expected that the level will pass through (a) at least a couple of
+		times.  Designer uses whatever tools necessary to make the decision.
+	d.	SIGNOFF.  The level is now ready to be returned to the game designer.
+
+
+
+5. GAME DESIGNER TEST.  
+
+The designer plays the level -- possibly showing it
+to QA staff and other gameplay testers -- to check how well it performs the
+goals outlined in step (1).  If the designer thinks the level implements the
+gameplay mechanics well, then the level is moved on to step (6), otherwise the
+level is returned to step (4) for more work.  
+
+Note that if the level is returned to the designer at step (4), the designer 
+should not take it as a slur on his or her ability.  
+
+Simply put, game designers are flaky people who don't really know anything, 
+and it's entirely possible that the game designer had too much coffee or stood to
+close to the microwave this morning.  Aside from that, game design is an 
+entirely iterative process, and the gameplay mechanics implemented in the 
+level may not be well understood by anyone, and in many cases may even be 
+unique to this particular game.  
+
+During steps (4) and (5), the level designer should think of himself as a 
+"gameplay scientist".  If a gameplay mechanic is an hypothesis about how people
+can have fun, then the level design should be thought of as an experiment to 
+prove it.  The level designer should, by default, expect many experiments to 
+fail.  Such is life.
+
+However, no level designer should accept a returned level from the game designer 
+without adequate feedback about what to change from the game designer.  
+Poor feedback is totally unacceptable.
+
+
+
+6. NARRATIVE REFINEMENT
+
+At this point, the gameplay should be 80-90% complete, so the level designer
+moves on to the artistic side of the process.  The game designer must provide
+guidance as to where the level fits in the narrative.  The level may be passed
+off to script editors for work.  This is an iterative process:
+	a.	PLAN.  The game designer says what needs to be done.  If there is a 
+		style sheet then this is given to the designer.
+	b.	PAINTING.  The designer styles the level with textures, sounds, and
+		so forth.
+	c.	SCRIPTING.	The designer adds in any script elements, if required.
+	d.	DESIGNER TEST.	The designer checks the work, and if they think it's
+		ready they show it to the designer (7), otherwise they return to (6b).
+
+
+
+7. GAME DESIGNER NARRATIVE TEST
+
+The designer runs the level through a similar process to (5).  The level is 
+return to (6) if further work or changes are required, otherwise the level moves on to
+the next step.
+
+
+
+8. QA
+
+Play testing to find bugs.  If a gameplay bug is found here, the game designer
+must sheepishly shift the level all the way step (4) to start again.  Shit
+happens though, so it's not that big of a deal, usually.
+
+
+9. FINAL POLISH
+
+Narrative bugs fixed.  Final testing.
+
+
+10. DONE!
+
+The level is finished, and added to the pile.
+
+
+
+
+
+
+
+
