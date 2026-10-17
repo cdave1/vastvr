@@ -27,6 +27,8 @@ points to Command Line Tools; set `DEVELOPER_DIR` for a different Xcode install.
 ./scripts/build-macos.sh Debug VastDevKit
 ./scripts/build-macos.sh Debug VastBrowser
 open .build/DerivedData/Build/Products/Debug/VastBrowser.app
+./scripts/build-macos.sh Debug PhysicsHotel
+open .build/DerivedData/Build/Products/Debug/PhysicsHotel.app
 ```
 
 Box2D, difont, and FreeType are included as source files: no submodule setup,
@@ -38,13 +40,16 @@ is loaded from Homebrew. They are not standalone distributable app bundles.
 
 ## Status
 
-The maintained starting point is VastBuilder, VastBrowser, and VastDevKit on macOS. Other app,
+The maintained starting point is VastBuilder, VastBrowser, PhysicsHotel, and VastDevKit on macOS. Other app,
 Android, iOS, Windows, and tool projects are retained for future work and have not
 been validated. Some legacy SDKs and uninitialized dependencies were deliberately
 excluded; see [the import notes](docs/import.md).
 
 [VastBrowser](VastApps/VastBrowser/README.md) launches the teapot, shadow, geometry,
 piano, and local-audio demos. It uses the shared Retina renderer and current SDK.
+
+[PhysicsHotel](VastApps/PhysicsHotel/README.md) is a physics playground for
+dragging, bouncing, and stacking balls and boxes, with pause/gravity/reset controls.
 
 Music is not bundled. UI fonts and the engine's embedded fallback font use
 Carlito under SIL OFL 1.1. Font Awesome 4.2.0 remains under its original OFL license.
@@ -94,6 +99,8 @@ editing and sound, saves it, and reloads it in a second process:
 
 After building VastBrowser in Debug, check its launcher, scenes, piano/audio
 interaction, and Retina presentation with `./scripts/test-browser-macos.sh`.
+After building PhysicsHotel in Debug, check its physics, mouse interaction,
+keyboard controls, and resizing with `./scripts/test-physics-macos.sh`.
 
 The builder check's save files and rendered frames stay under
 `.build/builder-check.*`; it does not modify your working scene. Desktop controls use WASD to move, arrow keys to

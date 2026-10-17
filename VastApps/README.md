@@ -10,8 +10,11 @@ From the repository root:
 open .build/DerivedData/Build/Products/Debug/VastBuilder.app
 ./scripts/build-macos.sh Debug VastBrowser
 open .build/DerivedData/Build/Products/Debug/VastBrowser.app
+./scripts/build-macos.sh Debug PhysicsHotel
+open .build/DerivedData/Build/Products/Debug/PhysicsHotel.app
 ```
 
 See the [root README](../README.md) for dependencies, supported targets, and licensing.
-VastBuilder and [VastBrowser](VastBrowser/README.md) are the current macOS apps;
+VastBuilder, [VastBrowser](VastBrowser/README.md), and the
+[PhysicsHotel sandbox](PhysicsHotel/README.md) are the current macOS apps;
 the other apps are legacy projects.

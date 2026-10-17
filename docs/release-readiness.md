@@ -105,3 +105,21 @@ The shared renderer binds each mesh VAO explicitly and owns the VAO used for
 index uploads, preventing draws/uploads from changing another renderer's state.
 Picking compares actual surface distances after broad-phase rejection; a large
 floor's bounding sphere no longer takes priority over a closer piano key.
+
+## PhysicsHotel sandbox restoration
+
+The maintained macOS scheme uses the current SDK, shared renderer, bundled Box2D,
+and a resizable Cocoa window. It reconstructs the earlier unfinished physics
+playground with procedural balls and boxes, fixed-step simulation, mouse joints,
+and explicit add/remove, pause, gravity, and reset controls. Historical source and
+the iOS project are retained separately. See the
+[PhysicsHotel instructions](../VastApps/PhysicsHotel/README.md).
+
+`scripts/test-physics-macos.sh` runs the real scene, view, and input queue with a
+test bootstrap. It sends Cocoa keyboard events and mouse events through the view
+callbacks, checking gravity, containment/collisions, pause, dragging/release away,
+client pause cancellation, adding/removing through both capacity boundaries,
+reset, and pointer picking after size/aspect changes. Rendered frames verify the
+full Retina viewport, all four quadrants, and an orange ball at its Box2D position.
+It does not validate operating-system-wide event delivery. Artifacts remain under
+`.build/physics-check.*`; normal project resources and asset bytes are unchanged.

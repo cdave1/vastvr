@@ -60,11 +60,12 @@ correction. Mobile/headset integrations remain unvalidated.
    grants, original replacements, quaternion correction, and validation.
 3. Add CI for the macOS baseline. The reproducible builder interaction and
    save/reload check is in `scripts/test-builder-macos.sh`; the demo-launcher
-   check is in `scripts/test-browser-macos.sh`.
+   check is in `scripts/test-browser-macos.sh`; the PhysicsHotel sandbox check
+   is in `scripts/test-physics-macos.sh`.
 4. Upgrade dependencies one at a time with a passing build and smoke test after each
    update. Box2D, FreeType/difont, libpng, zlib, and SDL are initial candidates.
 5. Remove remaining historical machine-specific paths from legacy targets as each
-   target is restored. Apps other than VastBuilder/VastBrowser, and mobile/Windows
+   target is restored. Apps other than VastBuilder/VastBrowser/PhysicsHotel, and mobile/Windows
    projects, are currently unverified.
 6. Prepare self-contained resources and SDL packaging if distributing app binaries.
 
@@ -105,3 +106,8 @@ VastBrowser was restored on 2026-10-17 using the current SDK project and shared
 Retina renderer. Debug/Release builds and native launcher, scene, piano, and
 audio checks pass; the Builder regression check also passes. No removed media
 was reintroduced. See the [Browser instructions](../VastApps/VastBrowser/README.md).
+
+PhysicsHotel's macOS target now builds against the current SDK and shared Retina
+renderer. Its maintained `src/` scene reconstructs the unfinished physics sandbox
+using the existing Box2D dependency and procedural balls/boxes. Historical source
+and iOS remain separate. See the [sandbox instructions](../VastApps/PhysicsHotel/README.md).

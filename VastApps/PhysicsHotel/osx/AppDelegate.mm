@@ -1,153 +1,38 @@
+// Copyright (c) 2026 David Petrie. SPDX-License-Identifier: MIT
 #import "AppDelegate.h"
-
-
-static bool keepRenderThreadAlive = true;
-
-
-@interface AppDelegate (Private)
-- (void)StartApplication;
-- (void)RenderThread;
-- (void) createFailed;
-@end
-
+#import <OpenGL/gl3.h>
 
 @implementation AppDelegate
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {}
-
-
-- (void) update {
-	m_client->Update();
-    m_client->Render();
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    NSRect available = NSScreen.mainScreen.visibleFrame;
+    NSRect frame = NSMakeRect(0, 0, MIN(1280, available.size.width * 0.9), MIN(800, available.size.height * 0.85));
+    window = [[NSWindow alloc] initWithContentRect:frame
+        styleMask:NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable
+        backing:NSBackingStoreBuffered defer:NO];
+    window.title = @"PhysicsHotel"; window.delegate = self;
+    window.contentMinSize = NSMakeSize(640, 480);
+    NSOpenGLPixelFormatAttribute attributes[] = {NSOpenGLPFAAccelerated, NSOpenGLPFADoubleBuffer,
+        NSOpenGLPFAColorSize, 24, NSOpenGLPFADepthSize, 24, NSOpenGLPFAStencilSize, 8,
+        NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion4_1Core, 0};
+    NSOpenGLPixelFormat *format = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
+    view = [[PhysicsView alloc] initWithFrame:frame pixelFormat:format]; [format release];
+    window.contentView = view; [window center]; [window makeKeyAndOrderFront:nil];
+    [window makeFirstResponder:view]; [[view openGLContext] makeCurrentContext];
+    hd::Device::SetDisplayScreenSize(frame.size.width, frame.size.height);
+#ifdef DEVELOPER_FILE_SYSTEM_ROOT
+    hd::FileSystem::Init(DEVELOPER_FILE_SYSTEM_ROOT);
+#else
+    hd::FileSystem::Init([NSBundle.mainBundle.resourcePath UTF8String]);
+#endif
+    hd::graphics::ShaderLoader::Instance()->SetShaderLocation("resources/shaders/gl3/");
+    client = new hd::application::Client(); [view setClient:client]; client->Init();
+    [view setRenderProxy:self]; [NSApp activateIgnoringOtherApps:YES];
 }
-
-
-static BOOL clientInitted = NO;
-- (void) render {
-    if (clientInitted == NO) {
-        m_client->Init();
-        clientInitted = YES;
-    }
-    
-    @synchronized(_lock) {
-        m_client->Render();
-    }
+- (void)update { if (client) client->Update(); }
+- (void)render { if (client) client->Render(); }
+- (void)windowDidResignKey:(NSNotification *)notification { if (client) client->Pause(); }
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)application { return YES; }
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    if (client) { client->WillShutdown(); client->Shutdown(); }
 }
-
-
-- (void)RenderThread {
-	if (clientInitted == NO) {
-        return;
-    }
-    
-    @synchronized(_lock) {
-        m_client->Update();
-    }
-    
-    [_glView nextFrame];
-}
-
-
-- (void)StartRenderThread {
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	
-	[[_glView openGLContext] makeCurrentContext];
-    [NSTimer scheduledTimerWithTimeInterval:0.016 target:self selector:@selector(RenderThread) userInfo:nil repeats:TRUE];
-    [pool drain];
-}
-
-
-- (void)StartApplication {
-    m_client = new hd::application::Client();
-    [_glView setClient:m_client];
-    
-    //[_glView enterFullScreenMode:[NSScreen mainScreen] withOptions:nil];
-    
-    hd::Device::SetDisplayScreenSize([_glView frame].size.width, [_glView frame].size.height);
-    
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-
-	
-	[[_glView openGLContext] makeCurrentContext];
-    [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(RenderThread) userInfo:nil repeats:TRUE];
-    [pool drain];
-    
-	//[NSThread detachNewThreadSelector:@selector(StartRenderThread) toTarget:self withObject:nil];
-}
-
-
-- (void) awakeFromNib {
-	_lock = [[NSObject alloc] init];
-	
-
-    [_glView setRenderProxy:self];
-    
-	[NSApp setDelegate:self];
-    
-    [self StartApplication];
-    
-}
-
-
-- (IBAction) resize:(id)sender {
-	@synchronized(_lock) {
-        NSLog(@"RESIZE");
-	}
-}
-
-
-/*
- * Set full screen.
- */
-
-- (IBAction)setFullScreen:(id)sender {
-	/*
-     [ _glWindow setContentView:nil ];
-     if( [ _glView isFullScreen ] )
-     {
-     if( ![ _glView setFullScreen:FALSE inFrame:[ _glWindow frame ] ] )
-     [ self createFailed ];
-     else
-     [ _glWindow setContentView:_glView ];
-     }
-     else
-     {
-     if( ![ _glView setFullScreen:TRUE
-     inFrame:NSMakeRect( 0, 0, 800, 600 ) ] )
-     [ self createFailed ];
-     }
-	 */
-}
-
-
-/*
- * Called if we fail to create a valid OpenGL view
- */
-
-- (void) createFailed {
-	NSWindow *infoWindow;
-	
-	infoWindow = NSGetCriticalAlertPanel( @"Initialization failed",
-                                         @"Failed to initialize OpenGL",
-                                         @"OK", nil, nil );
-	[NSApp runModalForWindow:infoWindow];
-	[infoWindow close];
-	[NSApp terminate:self];
-}
-
-
-- (void) dealloc {
-	keepRenderThreadAlive = false;
-	
-    m_client->WillShutdown();
-	m_client->Shutdown();
-	
-	[_glView release];
-	[_glWindow release];
-	[_lock release];
-	
-	[super dealloc];
-}
-
-
 @end

@@ -106,3 +106,12 @@ not self-contained binary releases with a complete notice package.
 A subsequent [source release check](release-readiness.md) on 2026-10-17
 authorized explicit MIT terms for the project recordings and exercised editing,
 colors, sound, persistence, and full-window Retina rendering in the builder.
+
+The PhysicsHotel restoration rechecked all 12 retained resources against this
+inventory: two original generated textures, nine reviewed legacy shaders, and
+one owner-licensed recording. The maintained Mac scene uses procedural geometry,
+shared reviewed GL3 shaders, Carlito Bold under OFL, and the existing MIT
+`blop_002.wav` effect. It loads none of the old PhysicsHotel resource folder and
+introduces no downloaded media. The earlier legacy-shader/iOS validation limits
+above still apply; the maintained Mac sandbox is covered by its separate
+[native interaction check](../VastApps/PhysicsHotel/README.md).

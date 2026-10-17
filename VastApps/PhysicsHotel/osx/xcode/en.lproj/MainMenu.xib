@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="14A299l" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
             <connections>
-                <outlet property="delegate" destination="494" id="495"/>
+                <outlet property="delegate" destination="494" id="h14-d3-niH"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application">
+            <connections>
+                <outlet property="delegate" destination="494" id="e0w-sf-g0v"/>
+            </connections>
+        </customObject>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="skeleton" id="56">
-                    <menu key="submenu" title="skeleton" systemMenu="apple" id="57">
+                <menuItem title="PhysicsHotel" id="56">
+                    <menu key="submenu" title="PhysicsHotel" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About skeleton" id="58">
+                            <menuItem title="About PhysicsHotel" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
-                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
@@ -35,7 +36,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide skeleton" keyEquivalent="h" id="134">
+                            <menuItem title="Hide PhysicsHotel" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="367"/>
                                 </connections>
@@ -54,9 +55,9 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit skeleton" keyEquivalent="q" id="136">
+                            <menuItem title="Quit PhysicsHotel" keyEquivalent="q" id="136">
                                 <connections>
-                                    <action selector="terminate:" target="-3" id="449"/>
+                                    <action selector="terminate:" target="-3" id="5qX-6L-TSR"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -203,11 +204,7 @@
                                                 <action selector="performFindPanelAction:" target="-1" id="489"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="210">
-                                            <connections>
-                                                <action selector="centerSelectionInVisibleArea:" target="-1" id="245"/>
-                                            </connections>
-                                        </menuItem>
+                                        <menuItem title="Jump to Selection" keyEquivalent="j" id="210"/>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -297,15 +294,9 @@
                                         </menuItem>
                                         <menuItem title="Make Lower Case" id="465">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="lowercaseWord:" target="-1" id="468"/>
-                                            </connections>
                                         </menuItem>
                                         <menuItem title="Capitalize" id="466">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="capitalizeWord:" target="-1" id="467"/>
-                                            </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -500,9 +491,6 @@
                                         </menuItem>
                                         <menuItem title="Justify" id="500">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="alignJustified:" target="-1" id="523"/>
-                                            </connections>
                                         </menuItem>
                                         <menuItem title="Align Right" keyEquivalent="}" id="501">
                                             <connections>
@@ -520,23 +508,14 @@
                                                     <menuItem id="510">
                                                         <string key="title">	Default</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionNatural:" target="-1" id="525"/>
-                                                        </connections>
                                                     </menuItem>
                                                     <menuItem id="511">
                                                         <string key="title">	Left to Right</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionLeftToRight:" target="-1" id="526"/>
-                                                        </connections>
                                                     </menuItem>
                                                     <menuItem id="512">
                                                         <string key="title">	Right to Left</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeBaseWritingDirectionRightToLeft:" target="-1" id="527"/>
-                                                        </connections>
                                                     </menuItem>
                                                     <menuItem isSeparatorItem="YES" id="513"/>
                                                     <menuItem title="Selection" enabled="NO" id="514">
@@ -545,23 +524,14 @@
                                                     <menuItem id="515">
                                                         <string key="title">	Default</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionNatural:" target="-1" id="528"/>
-                                                        </connections>
                                                     </menuItem>
                                                     <menuItem id="516">
                                                         <string key="title">	Left to Right</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionLeftToRight:" target="-1" id="529"/>
-                                                        </connections>
                                                     </menuItem>
                                                     <menuItem id="517">
                                                         <string key="title">	Right to Left</string>
                                                         <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="makeTextWritingDirectionRightToLeft:" target="-1" id="530"/>
-                                                        </connections>
                                                     </menuItem>
                                                 </items>
                                             </menu>
@@ -636,7 +606,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="491">
                         <items>
-                            <menuItem title="skeleton Help" keyEquivalent="?" id="492">
+                            <menuItem title="PhysicsHotel Help" keyEquivalent="?" id="492">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="493"/>
                                 </connections>
@@ -645,29 +615,11 @@
                     </menu>
                 </menuItem>
             </items>
-        </menu>
-        <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="_glView" destination="536" id="539"/>
-                <outlet property="_glWindow" destination="534" id="540"/>
+                <outlet property="delegate" destination="-3" id="eu8-Xk-VyD"/>
             </connections>
-        </customObject>
+        </menu>
+        <customObject id="494" customClass="AppDelegate"/>
         <customObject id="420" customClass="NSFontManager"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" animationBehavior="default" id="534">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="1300" height="900"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
-            <view key="contentView" id="535">
-                <rect key="frame" x="0.0" y="0.0" width="1300" height="900"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <openGLView canDrawConcurrently="YES" colorSize="5bit_RGB_8bit_Alpha" depthSize="32bit" useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" useRecovery="YES" id="536" customClass="AppView">
-                        <rect key="frame" x="0.0" y="0.0" width="1300" height="900"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </openGLView>
-                </subviews>
-            </view>
-        </window>
     </objects>
 </document>

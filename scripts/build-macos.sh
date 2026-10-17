@@ -4,10 +4,11 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 configuration="${1:-Debug}"
 build_target="${2:-VastBuilder}"
-case "$configuration" in Debug|Release) ;; *) echo "Usage: $0 [Debug|Release] [VastBuilder|VastBrowser|VastDevKit]" >&2; exit 2 ;; esac
+case "$configuration" in Debug|Release) ;; *) echo "Usage: $0 [Debug|Release] [VastBuilder|VastBrowser|PhysicsHotel|VastDevKit]" >&2; exit 2 ;; esac
 case "$build_target" in
   VastBuilder) project="$repo_root/VastApps/VastBuilder/osx/xcode/VastBuilder.xcodeproj" ;;
   VastBrowser) project="$repo_root/VastApps/VastBrowser/osx/xcode/VastBrowser.xcodeproj" ;;
+  PhysicsHotel) project="$repo_root/VastApps/PhysicsHotel/osx/xcode/PhysicsHotel.OSX.xcodeproj" ;;
   VastDevKit) project="$repo_root/VastDevKit/build/xcode/VastDevKit.xcodeproj" ;;
   *) echo "Unknown target: $build_target" >&2; exit 2 ;;
 esac

@@ -1,22 +1,11 @@
+// Copyright (c) 2026 David Petrie. SPDX-License-Identifier: MIT
 #import <Cocoa/Cocoa.h>
-
-#import "AppView.h"
-#include "core/application/Client.h"
-
-@interface AppDelegate : NSResponder <NSApplicationDelegate>
-{
-@private
-    IBOutlet NSWindow *_glWindow;
-	IBOutlet AppView *_glView;
-	NSObject *_lock;
-    hd::application::Client *m_client;
+#import "PhysicsView.h"
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
+    NSWindow *window;
+    PhysicsView *view;
+    hd::application::Client *client;
 }
-
-- (void) awakeFromNib;
-- (void) keyDown:(NSEvent *)theEvent;
-- (IBAction) setFullScreen:(id)sender;
-- (IBAction) resize:(id)sender;
-- (void) dealloc;
-- (void) render;
-
+- (void)update;
+- (void)render;
 @end
