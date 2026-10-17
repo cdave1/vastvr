@@ -1,8 +1,14 @@
-# vastvr
+# VastVR
 
-A development snapshot of the VastDevKit VR engine and VastApps applications,
-combined in one repository. This is the starting point for incremental dependency
-and platform updates.
+VastVR is a C++ engine used to develop virtual reality applications during
+2015–2018. This repository preserves the VastDevKit engine alongside the tools,
+applications, and experiments built around it in VastApps.
+
+The engine and apps were originally maintained in separate repositories and are
+now combined into this open-source snapshot. Recent restoration work makes the
+SDK and selected macOS apps buildable and usable on current Macs, so the original
+work can be explored today. Historical VR, mobile, and Windows targets remain
+unvalidated; see [Status](#status) below.
 
 - `VastDevKit/`: engine, source snapshots of dependencies, and legacy tools.
 - `VastApps/`: applications and shared resources.
